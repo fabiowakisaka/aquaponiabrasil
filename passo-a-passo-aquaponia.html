@@ -30,7 +30,6 @@
         .content a { color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--primary); transition: 0.2s; }
         .content a:hover { background: #eff7e9; border-bottom-style: solid; }
 
-        /* Estilo para a Jornada de Passos */
         .step-guide { margin: 40px 0; border-left: 3px solid #eee; padding-left: 30px; }
         .step-point { position: relative; margin-bottom: 50px; }
         .step-point::before { content: ''; position: absolute; left: -37px; top: 5px; width: 12px; height: 12px; background: var(--primary); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 0 3px var(--primary); }
@@ -45,10 +44,11 @@
         .amazon-showcase { background: var(--light-bg); border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid #ddd; text-align: center; }
         .amazon-showcase h3 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 25px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-        .product-card { background: white; padding: 15px; border-radius: 10px; border: 1px solid #eee; transition: 0.3s; }
+        .product-card { background: white; padding: 15px; border-radius: 10px; border: 1px solid #eee; transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .product-card img { max-width: 140px; height: auto; margin-bottom: 10px; }
-        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 20px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 14px; }
+        .product-card img { width: 120px; height: 120px; object-fit: contain; margin-bottom: 10px; }
+        .product-card h4 { font-size: 15px; margin: 10px 0; height: 40px; overflow: hidden; }
+        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 10px 20px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 13px; }
 
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
         .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; }
@@ -61,80 +61,73 @@
     <div id="menu-placeholder"></div>
 
     <header class="page-title">
-        <h1>Guia Mestre: Como Montar sua Aquaponia</h1>
+        <h1>Passo a Passo: Sua Primeira Aquaponia</h1>
     </header>
 
     <div class="container">
         <article class="content">
-            <p>Seja bem-vindo ao guia prático da **Aquaponia Brasil**. Se você busca uma atividade que une sustentabilidade, produção de alimentos orgânicos e uma terapia relaxante para o dia a dia, você está no lugar certo.</p>
+            <p>Seja bem-vindo ao guia definitivo da **Aquaponia Brasil**. Montar seu próprio sistema é mais simples do que parece, mas exige atenção aos detalhes técnicos que garantem a vida dos peixes e das plantas.</p>
 
-            <img src="Home_arquivos/passoapasso01.png" alt="Visão geral de um sistema de Aquaponia" class="article-img">
+            <img src="Home_arquivos/passoapasso01.png" alt="Visão geral" class="article-img">
             <span class="img-caption">Um ecossistema equilibrado: peixes e plantas em harmonia.</span>
-
-            <div class="highlight-card">
-                <p><strong>O conceito é simples:</strong> os peixes alimentam as plantas e as plantas limpam a água para os peixes. Para entender a ciência por trás disso, veja <a href="o-que-e-a-aquaponia.html">o que é aquaponia</a>.</p>
-            </div>
 
             <div class="step-guide">
                 <!-- Passo 1 -->
                 <div class="step-point">
-                    <h2>01. O Reservatório de Vida</h2>
-                    <p>Tudo começa com o <a href="o-tanque-de-peixes.html">Tanque de Peixes</a>. Para iniciantes, caixas d'água atóxicas de 500 a 1000 litros são ideais. Elas oferecem volume suficiente para manter a estabilidade da água.</p>
-                    <img src="Home_arquivos/passoapasso02.jpg" alt="Camas de cultivo sobre o tanque" class="article-img">
+                    <h2>01. O Reservatório (Tanque)</h2>
+                    <p>Comece com uma caixa d'água atóxica (Polietileno). Para iniciantes, o ideal é entre 500L e 1000L. Posicione-a em um local plano e que suporte o peso final.</p>
+                    <img src="Home_arquivos/passoapasso02.jpg" alt="Montagem básica" class="article-img">
                 </div>
 
                 <!-- Passo 2 -->
                 <div class="step-point">
-                    <h2>02. O Coração do Sistema (A Bomba)</h2>
-                    <p>A bomba de água é o componente mais crítico. Ela precisa funcionar 24 horas por dia para garantir a oxigenação. Nunca subestime este item: se a bomba parar, o sistema morre.</p>
+                    <h2>02. Circulação e Bomba</h2>
+                    <p>A bomba deve ser capaz de girar o volume total do tanque pelo menos 2 a 3 vezes por hora. Sem circulação, não há oxigênio e os peixes morrem.</p>
+                    
                     <div class="highlight-card" style="border-left: 5px solid #d9534f;">
-                        <p><strong>Aviso de Engenharia:</strong> Sempre tenha uma bomba de reserva. Falhas acontecem, e ter uma unidade extra pode salvar seus peixes em um final de semana.</p>
+                        <p><strong>Dica do Fábio:</strong> Nunca economize na bomba. É o coração do sistema. Tenha sempre uma reserva para emergências!</p>
                     </div>
-                    <img src="Home_arquivos/passoapasso06.jpg" alt="Bomba submersa de aquário" class="article-img">
                 </div>
 
-                <!-- BLOCO DE CONVERSÃO AMAZON - Kits de Início -->
+                <!-- VITRINE 1: BOMBAS E TESTES -->
                 <section class="amazon-showcase">
-                    <h3>Comece com os Equipamentos Certos</h3>
-                    <p>Recomendamos estes itens para quem está iniciando sua primeira montagem:</p>
+                    <h3>Equipamentos para Começar</h3>
                     <div class="product-grid">
                         <div class="product-card">
-                            <img src="https://m.media-amazon.com/images/I/61uRVgftIqL._AC_SL1280_.jpg" alt="Bomba Ocean Tech">
-                            <p><b>Bomba Ocean Tech</b><br>Alta eficiência e durabilidade para uso contínuo.</p>
-                            <a href="https://amzn.to/4tu4YFZ" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                            <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba 1000 L/h">
+                            <h4>Bomba Submersa 1000 L/H (Sistemas Pequenos)</h4>
+                            <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
                         </div>
                         <div class="product-card">
-                            <img src="https://m.media-amazon.com/images/I/61S6h0S4S7L._AC_SL1000_.jpg" alt="Kit de Testes Amônia">
-                            <p><b>Kit de Testes Master</b><br>Essencial para monitorar a química da água.</p>
-                            <a href="https://amzn.to/3YpD5v7" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                            <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
+                            <h4>Kit Completo de Testes (Amônia, Nitrito, PH)</h4>
+                            <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
                         </div>
                     </div>
                 </section>
 
                 <!-- Passo 3 -->
                 <div class="step-point">
-                    <h2>03. A Química Natural (Nitrificação)</h2>
-                    <p>Antes de colocar muitos peixes, seu sistema precisa passar pelo ciclo do nitrogênio. As bactérias benéficas transformarão a amônia em nutrientes para as plantas. Entender o <a href="o-tanque-de-peixes.html">ciclo biológico</a> é o que diferencia o sucesso do fracasso.</p>
-                    <img src="Home_arquivos/passoapasso04.jpg" alt="Ilustração do Ciclo do Nitrogênio" class="article-img">
+                    <h2>03. Filtragem e Biologia</h2>
+                    <p>A água do tanque deve passar por um <a href="os-filtros.html">filtro mecânico</a> (para tirar a sujeira pesada) e depois pelas mídias biológicas, onde as bactérias transformam amônia em adubo para as plantas.</p>
+                    <img src="Home_arquivos/passoapasso04.jpg" alt="Ciclo do Nitrogênio" class="article-img">
                 </div>
 
                 <!-- Passo 4 -->
                 <div class="step-point">
-                    <h2>04. Estrutura e Circulação</h2>
-                    <p>Seja com canos de PVC ou <a href="limpeza-das-camas-de-cultivo.html">camas de cultivo</a>, o importante é o fluxo. A água deve subir por pressão da bomba e retornar por <a href="desnivel.html">gravidade</a>, criando um ciclo de renovação constante.</p>
-                    <img src="Home_arquivos/passoapasso08.jpg" alt="Sistema de tubulação vertical" class="article-img">
+                    <h2>04. A Cama de Cultivo</h2>
+                    <p>Utilize argila expandida ou brita para fixar as plantas. É aqui que a mágica acontece: as raízes filtram a água e crescem com os nutrientes dos peixes.</p>
+                    <img src="Home_arquivos/duckweedgrowbed.jpg" alt="Cama de cultivo" class="article-img">
                 </div>
             </div>
 
-            <p>Muito da aquaponia é improviso, teste e persistência. Não existe um modelo 100% definitivo, mas o aprendizado constante é o que torna este hobby tão prazeroso.</p>
-            
-            <p>Pronto para mergulhar mais fundo? O próximo passo é entender como manter seu ambiente seguro e produtivo.</p>
+            <p>O aprendizado é constante. Cada erro é um ajuste para um sistema mais resiliente. Se você já tem os equipamentos básicos, comece a <a href="o-tanque-de-peixes.html">ciclagem da água</a> imediatamente!</p>
 
         </article>
 
         <div class="nav-footer">
-            <p><strong>Próxima lição fundamental:</strong></p>
-            <a href="o-tanque-de-peixes.html" class="btn-next">Tudo sobre o Tanque de Peixes →</a>
+            <p><strong>Entenda melhor os componentes:</strong></p>
+            <a href="o-tanque-de-peixes.html" class="btn-next">Guia do Tanque de Peixes →</a>
         </div>
     </div>
 
