@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Scripts Globais (Obrigatórios para sua estratégia) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JB0HG78W4F');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Guia Técnico - Aquaponia Brasil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --primary: #69A84F; --dark: #1a1a1a; --white: #ffffff; }
+        
+        body { 
+            font-family: 'Raleway', sans-serif; 
+            margin: 0; 
+            background: #f0f2f0; /* Fundo neutro para focar no box */
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+        }
+
+        .capture-card { 
+            background: var(--white); 
+            max-width: 450px; 
+            width: 90%;
+            padding: 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+            text-align: center; 
+        }
+
+        .brand { 
+            font-family: 'Source Serif Pro', serif; 
+            color: var(--primary); 
+            font-size: 22px; 
+            text-decoration: none; 
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        h1 { 
+            font-family: 'Source Serif Pro', serif; 
+            font-size: 26px; 
+            color: var(--dark); 
+            margin-bottom: 15px; 
+            line-height: 1.3;
+        }
+
+        p { color: #555; font-size: 16px; margin-bottom: 25px; line-height: 1.5; }
+
+        .benefits { 
+            text-align: left; 
+            background: #f9f9f9; 
+            padding: 20px; 
+            border-radius: 6px; 
+            margin-bottom: 25px;
+        }
+        .benefits div { margin-bottom: 8px; font-size: 14px; color: #444; display: flex; align-items: center; }
+        .benefits span { color: var(--primary); font-weight: bold; margin-right: 10px; }
+
+        form { display: flex; flex-direction: column; gap: 12px; }
+        
+        input { 
+            padding: 14px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+            font-size: 16px; 
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input:focus { border-color: var(--primary); }
+
+        .btn-submit { 
+            background: var(--primary); 
+            color: white; 
+            padding: 16px; 
+            border: none; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            font-size: 18px; 
+            cursor: pointer; 
+            transition: background 0.3s;
+        }
+        .btn-submit:hover { background: #558a3f; }
+        .btn-submit:disabled { background: #ccc; cursor: not-allowed; }
+
+        .privacy { font-size: 11px; color: #999; margin-top: 15px; }
+
+        #loading-overlay { display: none; margin-top: 15px; color: var(--primary); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="capture-card">
+        <a href="index2.html" class="brand">Aquaponia Brasil</a>
+        
+        <h1>Manual Técnico: Do Zero à Primeira Colheita</h1>
+        <p>Evite os erros fatais que matam peixes e plantas nas primeiras 48 horas do sistema.</p>
+
+        <div class="benefits">
+            <div><span>✓</span> Esquema de filtragem biológica</div>
+            <div><span>✓</span> Tabela de Amônia e Nitrito</div>
+            <div><span>✓</span> Lista de espécies recomendadas</div>
+        </div>
+
+        <!-- O FORMULÁRIO -->
+        <form id="lead-capture-form">
+            <input type="text" name="name" placeholder="Seu nome" required title="Informe seu nome">
+            <input type="email" name="email" placeholder="Seu melhor e-mail" required title="Informe um e-mail válido">
+            
+            <button type="submit" class="btn-submit" id="submit-button">QUERO RECEBER O MANUAL</button>
+        </form>
+
+        <div id="loading-overlay">Salvando seus dados...</div>
+
+        <div class="privacy">
+            🔒 Seus dados estão protegidos e não enviamos spam.
+        </div>
+
+        <!-- AdSense Discreto para monetizar a visualização -->
+        <div style="margin-top: 20px;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8996333447529356" data-ad-slot="auto" data-ad-format="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <script>
+        // SUBSTITUA pela URL que você gerou no Google Apps Script
+        const scriptURL = 'SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI';
+        
+        const form = document.getElementById('lead-capture-form');
+        const btn = document.getElementById('submit-button');
+        const loading = document.getElementById('loading-overlay');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.style.display = 'none';
+            loading.style.display = 'block';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    // ESTRATÉGIA: Redireciona para a página de equipamentos (Venda)
+                    window.location.href = 'equipamentos.html?status=sucesso';
+                })
+                .catch(error => {
+                    console.error('Erro!', error.message);
+                    alert('Ocorreu um erro. Por favor, tente novamente.');
+                    btn.style.display = 'block';
+                    loading.style.display = 'none';
+                });
+        });
+    </script>
+
+</body>
+</html>
