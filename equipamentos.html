@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Scripts Globais -->
+    <!-- Configurações de Rastreamento e Monetização -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
     <script>
@@ -13,55 +13,69 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipamentos Essenciais - Aquaponia Brasil</title>
+    <title>Componentes Essenciais para Aquaponia - Aquaponia Brasil</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     
     <style>
-        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --light-bg: #f9f9f9; }
-        body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--dark); line-height: 1.8; background: var(--white); }
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --light-bg: #f4f4f4; }
+        body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--dark); line-height: 1.6; background-color: var(--white); }
         
-        .container { padding: 40px 5%; max-width: 1000px; margin: 0 auto; }
+        .container { padding: 40px 5%; max-width: 1100px; margin: 0 auto; }
         
-        /* Header Estratégico */
-        .story-header { padding: 80px 5%; background: var(--dark); color: white; text-align: center; }
-        .story-header h1 { font-family: 'Source Serif Pro', serif; color: var(--primary); font-size: 38px; margin-bottom: 20px; }
-        .story-header p { font-size: 18px; max-width: 800px; margin: 0 auto; opacity: 0.9; }
+        /* Cabeçalho Formal */
+        .page-header { padding: 80px 5%; background: var(--dark); color: white; text-align: center; }
+        .page-header h1 { font-family: 'Source Serif Pro', serif; color: var(--primary); font-size: 36px; margin-bottom: 20px; }
+        .page-header p { font-size: 18px; max-width: 800px; margin: 0 auto; opacity: 0.8; }
 
-        /* Estilo dos Produtos */
-        .product-section { 
+        /* Estrutura Técnica dos Equipamentos */
+        .equipment-section { 
             display: flex; 
-            gap: 40px; 
+            gap: 50px; 
             align-items: center; 
-            margin-bottom: 80px; 
-            padding: 30px;
-            border-radius: 15px;
-            background: var(--light-bg);
+            margin-bottom: 100px; 
+            padding-bottom: 50px;
+            border-bottom: 1px solid #eee;
         }
         
-        .product-image { flex: 1; min-width: 250px; text-align: center; }
-        .product-image img { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .equipment-image { flex: 1; min-width: 300px; }
+        .equipment-image img { width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         
-        .product-info { flex: 2; min-width: 300px; }
-        .product-info h2 { font-family: 'Source Serif Pro', serif; font-size: 28px; color: var(--primary); margin-top: 0; }
+        .equipment-info { flex: 1.5; }
+        .equipment-info h2 { font-family: 'Source Serif Pro', serif; font-size: 32px; color: var(--dark); margin-top: 0; }
+        .equipment-info p { font-size: 16px; color: #555; text-align: justify; }
         
-        .buy-box { margin-top: 25px; padding: 20px; background: white; border-radius: 8px; border: 1px solid #eee; }
-        .cta-buy { 
+        .tech-specs { background: var(--light-bg); padding: 15px; border-radius: 5px; margin: 20px 0; font-size: 14px; }
+        
+        /* Botão de Conversão */
+        .cta-container { margin-top: 30px; }
+        .cta-button { 
             background: var(--accent); 
             color: white; 
-            padding: 15px 25px; 
+            padding: 18px 40px; 
             text-decoration: none; 
-            border-radius: 5px; 
+            border-radius: 4px; 
             font-weight: bold; 
             display: inline-block;
-            font-size: 18px;
-            transition: 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 0px #cc7a00;
         }
-        .cta-buy:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255,153,0,0.4); }
+        .cta-button:hover { background: #e68a00; transform: translateY(-2px); box-shadow: 0 6px 0px #cc7a00; }
 
-        .disclaimer { font-size: 13px; color: #777; text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid #eee; }
+        .interdependency-note { 
+            background: #fff9e6; 
+            border: 1px solid #ffe699; 
+            padding: 15px; 
+            font-size: 14px; 
+            color: #856404; 
+            margin-top: 15px;
+            border-radius: 4px;
+        }
 
-        @media (max-width: 768px) {
-            .product-section { flex-direction: column; text-align: center; }
+        .disclaimer { font-size: 12px; color: #999; text-align: center; margin-top: 60px; }
+
+        @media (max-width: 850px) {
+            .equipment-section { flex-direction: column; text-align: center; }
+            .equipment-info p { text-align: center; }
         }
     </style>
 </head>
@@ -69,67 +83,77 @@
 
     <div id="menu-placeholder"></div>
 
-    <header class="story-header">
-        <h1>Escolha o Hardware Certo.</h1>
-        <p>Na Aquaponia, o barato sai caro. Listamos abaixo os 3 itens que garantem que seu sistema não falhe e que seus peixes cresçam saudáveis.</p>
+    <header class="page-header">
+        <h1>Engenharia do Sistema: Componentes de Performance</h1>
+        <p>A viabilidade de um sistema de aquaponia depende da escolha de componentes que suportem a operação contínua e as demandas biológicas do ecossistema.</p>
     </header>
 
     <div class="container">
 
-        <!-- Produto 1: Bomba -->
-        <section class="product-section">
-            <div class="product-image">
-                <!-- Sugestão: Use a foto da Ocean Tech 2000 que você tem no sistema -->
-                <img src="Home_arquivos/bomba-aquaponia.jpg" alt="Bomba Ocean Tech 2000">
+        <!-- Componente 01: Circulação -->
+        <section class="equipment-section">
+            <div class="equipment-image">
+                <img src="https://m.media-amazon.com/images/I/61uRVgftIqL._AC_SL1280_.jpg" alt="Bomba Ocean Tech AC Pump">
             </div>
-            <div class="product-info">
-                <h2>01. O Coração: Bomba Ocean Tech</h2>
-                <p>O fluxo de água constante é o que mantém as bactérias vivas e as plantas nutridas. Esta bomba é a minha escolha pessoal por ser <strong>bivolt</strong> e ter um dos menores consumos de energia do mercado.</p>
-                <div class="buy-box">
-                    <p>✅ Silenciosa | ✅ Eixo Cerâmico | ✅ Ultra Durável</p>
-                    <a href="https://amzn.to/4tu4YFZ" target="_blank" class="cta-buy">Ver Preço na Amazon →</a>
+            <div class="equipment-info">
+                <h2>01. Unidade de Circulação de Fluxo</h2>
+                <p>O movimento constante da água é o parâmetro crítico para a oxigenação e transporte de nutrientes. A Bomba Ocean Tech AC Pump é projetada para operação 24/7, apresentando um motor eletrônico de alta eficiência que reduz o custo operacional energético, fator determinante em sistemas de médio e grande porte.</p>
+                <div class="tech-specs">
+                    <strong>Especificações Técnicas:</strong> Eixo de cerâmica de alta resistência, controle de vazão e tecnologia ultra silenciosa.
+                </div>
+                <div class="cta-container">
+                    <a href="https://amzn.to/4tu4YFZ" target="_blank" class="cta-button">Verificar Preço e Disponibilidade →</a>
                 </div>
             </div>
         </section>
 
-        <!-- Produto 2: Mídias -->
-        <section class="product-section">
-            <div class="product-image">
-                <img src="Home_arquivos/midia-biologica.jpg" alt="Mídia Cerâmica Nano Rings">
-            </div>
-            <div class="product-info">
-                <h2>02. O Pulmão: Nano Rings OceanTech</h2>
-                <p>Onde as bactérias moram? Nas mídias biológicas. Quanto mais porosa, melhor o seu "pulmão". Estas cerâmicas superam em 10x o rendimento de brita ou argila expandida, evitando que a amônia suba e intoxique seus peixes.</p>
-                <div class="buy-box">
-                    <p>✅ Super Porosa | ✅ Trata grandes volumes | ✅ Vida Longa</p>
-                    <a href="https://amzn.to/431iqX2" target="_blank" class="cta-buy">Ver Oferta de Mídias →</a>
+        <!-- Componente 02: Filtragem Biológica -->
+        <section class="equipment-section">
+            <div class="equipment-info">
+                <h2>02. Matriz de Colonização Bacteriana</h2>
+                <p>Sem uma área de superfície adequada para bactérias nitrificantes, a toxicidade da amônia inviabiliza a vida dos peixes. As mídias High Energy Nano Rings oferecem uma porosidade superior aos materiais convencionais, garantindo que o ciclo do nitrogênio ocorra de forma estável mesmo em situações de carga orgânica elevada.</p>
+                <div class="tech-specs">
+                    <strong>Importante:</strong> Este componente trabalha em conjunto direto com a Unidade de Circulação. O fluxo de água deve ser constante para manter a colônia viva.
                 </div>
+                <div class="cta-container">
+                    <a href="https://amzn.to/431iqX2" target="_blank" class="cta-button">Adquirir Matriz Biológica →</a>
+                </div>
+            </div>
+            <div class="equipment-image">
+                <img src="https://m.media-amazon.com/images/I/614zeGaEaIL._AC_SL1199_.jpg" alt="Mídia Cerâmica Nano Rings">
             </div>
         </section>
 
-        <!-- Produto 3: Timer -->
-        <section class="product-section">
-            <div class="product-image">
-                <img src="Home_arquivos/timer-digital.jpg" alt="Temporizador Digital Bivolt">
+        <!-- Componente 03: Automação -->
+        <section class="equipment-section">
+            <div class="equipment-image">
+                <img src="https://m.media-amazon.com/images/I/61jDwsvBUAL._AC_SL1500_.jpg" alt="Temporizador Digital Bivolt">
             </div>
-            <div class="product-info">
-                <h2>03. O Cérebro: Temporizador Digital</h2>
-                <p>Quer economizar energia e automatizar os ciclos de oxigenação das suas plantas? O Timer Digital permite que você programe exatamente quando a água deve circular. Essencial para sistemas de <em>Fluxo e Refluxo</em>.</p>
-                <div class="buy-box">
-                    <p>✅ Programação Semanal | ✅ Bivolt | ✅ Fácil Configuração</p>
-                    <a href="https://amzn.to/4wdlDAa" target="_blank" class="cta-buy">Ver Preço do Timer →</a>
+            <div class="equipment-info">
+                <h2>03. Módulo de Controle Temporal</h2>
+                <p>A automação dos ciclos de irrigação e oxigenação é o que diferencia um sistema experimental de um sistema produtivo. O Temporizador Digital permite a programação precisa dos intervalos de fluxo, protegendo as raízes das plantas contra o apodrecimento e otimizando o consumo de energia elétrica sem intervenção manual.</p>
+                <div class="interdependency-note">
+                    <strong>Nota de Engenharia:</strong> Para máxima eficiência, recomenda-se que este módulo controle a Unidade de Circulação para criar o efeito de fluxo e refluxo necessário em camas de cultivo.
+                </div>
+                <div class="cta-container">
+                    <a href="https://amzn.to/4wdlDAa" target="_blank" class="cta-button">Configurar Automação do Sistema →</a>
                 </div>
             </div>
         </section>
 
         <!-- AdSense Estratégico -->
         <div style="text-align:center; margin: 50px 0;">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8996333447529356" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8996333447529356"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
 
         <p class="disclaimer">
-            <strong>Transparência:</strong> Como associado da Amazon, recebemos uma pequena comissão por compras qualificadas. Isso não aumenta o custo para você e ajuda a manter este projeto educativo online.
+            As recomendações acima são baseadas em critérios técnicos de durabilidade e eficiência biológica. Como Associado da Amazon, recebemos comissões por compras qualificadas efetuadas através dos links desta página.
         </p>
 
     </div>
@@ -141,7 +165,7 @@
             fetch(file)
                 .then(response => response.text())
                 .then(data => { document.getElementById(id).innerHTML = data; })
-                .catch(err => console.error('Erro ao carregar:', err));
+                .catch(err => console.error('Erro ao carregar componente:', err));
         }
         loadComponent('menu-placeholder', 'menu.html');
         loadComponent('footer-placeholder', 'footer.html');
