@@ -79,12 +79,12 @@
             })
             .then(() => {
                 // Sucesso "Silencioso": O dado chegou na planilha, agora mudamos de página
-                window.location.href = 'equipamentos.html?status=success';
+                window.location.href = 'obrigado.html';
             })
             .catch(error => {
                 console.error('Erro técnico:', error);
                 // Mesmo com erro de rede, tentamos seguir para não frustrar o usuário
-                window.location.href = 'equipamentos.html?status=check_email';
+                window.location.href = 'obrigado.html';
             });
         });
     </script>
