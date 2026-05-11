@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Scripts Globais -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
     <script>
@@ -12,37 +13,56 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O que você realmente precisa - Aquaponia Brasil</title>
+    <title>Equipamentos Essenciais - Aquaponia Brasil</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     
     <style>
-        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --light-bg: #fdfdfd; }
-        body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--dark); line-height: 1.8; }
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --light-bg: #f9f9f9; }
+        body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--dark); line-height: 1.8; background: var(--white); }
         
         .container { padding: 40px 5%; max-width: 1000px; margin: 0 auto; }
         
-        /* Storytelling Header */
+        /* Header Estratégico */
         .story-header { padding: 80px 5%; background: var(--dark); color: white; text-align: center; }
-        .story-header h1 { font-family: 'Source Serif Pro', serif; color: var(--primary); font-size: 42px; margin-bottom: 20px; }
-        .story-header p { font-size: 20px; max-width: 800px; margin: 0 auto; opacity: 0.9; }
+        .story-header h1 { font-family: 'Source Serif Pro', serif; color: var(--primary); font-size: 38px; margin-bottom: 20px; }
+        .story-header p { font-size: 18px; max-width: 800px; margin: 0 auto; opacity: 0.9; }
 
-        .problem-alert { background: #fff5e6; border-left: 5px solid var(--accent); padding: 20px; margin: 40px 0; font-style: italic; }
+        /* Estilo dos Produtos */
+        .product-section { 
+            display: flex; 
+            gap: 40px; 
+            align-items: center; 
+            margin-bottom: 80px; 
+            padding: 30px;
+            border-radius: 15px;
+            background: var(--light-bg);
+        }
+        
+        .product-image { flex: 1; min-width: 250px; text-align: center; }
+        .product-image img { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        
+        .product-info { flex: 2; min-width: 300px; }
+        .product-info h2 { font-family: 'Source Serif Pro', serif; font-size: 28px; color: var(--primary); margin-top: 0; }
+        
+        .buy-box { margin-top: 25px; padding: 20px; background: white; border-radius: 8px; border: 1px solid #eee; }
+        .cta-buy { 
+            background: var(--accent); 
+            color: white; 
+            padding: 15px 25px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            display: inline-block;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .cta-buy:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255,153,0,0.4); }
 
-        /* Product Strategy */
-        .product-section { margin-bottom: 80px; }
-        .product-title { border-bottom: 2px solid var(--primary); display: inline-block; margin-bottom: 30px; font-size: 28px; }
-        
-        .flex-product { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
-        .product-info { flex: 1; min-width: 300px; }
-        .product-info h3 { font-size: 24px; margin-top: 0; }
-        
-        .buy-card { background: var(--light-bg); border: 2px solid #eee; padding: 30px; border-radius: 15px; text-align: center; min-width: 250px; }
-        .price-anchor { text-decoration: line-through; color: #999; font-size: 14px; }
-        .cta-buy { background: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: block; margin-top: 15px; font-size: 18px; }
-        
-        .badge { background: var(--primary); color: white; padding: 5px 10px; font-size: 12px; border-radius: 3px; text-transform: uppercase; }
+        .disclaimer { font-size: 13px; color: #777; text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid #eee; }
 
-        @media (max-width: 768px) { .flex-product { flex-direction: column; } }
+        @media (max-width: 768px) {
+            .product-section { flex-direction: column; text-align: center; }
+        }
     </style>
 </head>
 <body>
@@ -50,64 +70,78 @@
     <div id="menu-placeholder"></div>
 
     <header class="story-header">
-        <h1>Não jogue dinheiro fora.</h1>
-        <p>O maior erro de quem começa na Aquaponia é comprar equipamentos "baratos" que falham em 3 meses, matando seus peixes e destruindo seu investimento.</p>
+        <h1>Escolha o Hardware Certo.</h1>
+        <p>Na Aquaponia, o barato sai caro. Listamos abaixo os 3 itens que garantem que seu sistema não falhe e que seus peixes cresçam saudáveis.</p>
     </header>
 
     <div class="container">
-        
-        <div class="problem-alert">
-            "Eu perdi 20 tilápias em uma única noite porque minha bomba de baixa qualidade travou. Não deixe isso acontecer com você." - Fábio, Aquaponia Brasil.
-        </div>
 
-        <!-- Equipamento 1 -->
+        <!-- Produto 1: Bomba -->
         <section class="product-section">
-            <h2 class="product-title">01. O Coração do Sistema</h2>
-            <div class="flex-product">
-                <div class="product-info">
-                    <span class="badge">Recomendação Profissional</span>
-                    <h3>Bomba Submersa de Alta Performance</h3>
-                    <p>Você precisa de uma bomba que trabalhe 24h por dia, 365 dias por ano, sem aquecer a água. Esta bomba que selecionamos tem o eixo de cerâmica (não enferruja) e o menor consumo de energia da categoria.</p>
-                    <p><strong>Por que esta?</strong> Porque se ela parar, o ciclo de nitrogênio para, e seus peixes ficam sem oxigênio em minutos.</p>
-                </div>
-                <div class="buy-card">
-                    <span class="price-anchor">R$ 450,00</span>
-                    <div style="font-size: 28px; font-weight: bold; color: var(--primary);">Melhor Preço Online</div>
-                    <a href="SEU_LINK" class="cta-buy">Ver Disponibilidade →</a>
+            <div class="product-image">
+                <!-- Sugestão: Use a foto da Ocean Tech 2000 que você tem no sistema -->
+                <img src="Home_arquivos/bomba-aquaponia.jpg" alt="Bomba Ocean Tech 2000">
+            </div>
+            <div class="product-info">
+                <h2>01. O Coração: Bomba Ocean Tech</h2>
+                <p>O fluxo de água constante é o que mantém as bactérias vivas e as plantas nutridas. Esta bomba é a minha escolha pessoal por ser <strong>bivolt</strong> e ter um dos menores consumos de energia do mercado.</p>
+                <div class="buy-box">
+                    <p>✅ Silenciosa | ✅ Eixo Cerâmico | ✅ Ultra Durável</p>
+                    <a href="https://amzn.to/4tu4YFZ" target="_blank" class="cta-buy">Ver Preço na Amazon →</a>
                 </div>
             </div>
         </section>
 
-        <!-- Equipamento 2 -->
+        <!-- Produto 2: Mídias -->
         <section class="product-section">
-            <h2 class="product-title">02. O Seguro de Vida</h2>
-            <div class="flex-product">
-                <div class="product-info">
-                    <h3>Compressor de Ar com Backup</h3>
-                    <p>O calor do Brasil reduz drasticamente o oxigênio na água. Ter um compressor dedicado não é luxo, é segurança. Este modelo é silencioso o suficiente para ficar dentro de casa e potente para oxigenar até 1000 litros.</p>
-                </div>
-                <div class="buy-card">
-                    <a href="SEU_LINK" class="cta-buy">Ver na Amazon</a>
+            <div class="product-image">
+                <img src="Home_arquivos/midia-biologica.jpg" alt="Mídia Cerâmica Nano Rings">
+            </div>
+            <div class="product-info">
+                <h2>02. O Pulmão: Nano Rings OceanTech</h2>
+                <p>Onde as bactérias moram? Nas mídias biológicas. Quanto mais porosa, melhor o seu "pulmão". Estas cerâmicas superam em 10x o rendimento de brita ou argila expandida, evitando que a amônia suba e intoxique seus peixes.</p>
+                <div class="buy-box">
+                    <p>✅ Super Porosa | ✅ Trata grandes volumes | ✅ Vida Longa</p>
+                    <a href="https://amzn.to/431iqX2" target="_blank" class="cta-buy">Ver Oferta de Mídias →</a>
                 </div>
             </div>
         </section>
 
-        <!-- Espaço AdSense Estratégico -->
-        <div style="margin: 40px 0; text-align:center;">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8996333447529356" data-ad-slot="auto"></ins>
+        <!-- Produto 3: Timer -->
+        <section class="product-section">
+            <div class="product-image">
+                <img src="Home_arquivos/timer-digital.jpg" alt="Temporizador Digital Bivolt">
+            </div>
+            <div class="product-info">
+                <h2>03. O Cérebro: Temporizador Digital</h2>
+                <p>Quer economizar energia e automatizar os ciclos de oxigenação das suas plantas? O Timer Digital permite que você programe exatamente quando a água deve circular. Essencial para sistemas de <em>Fluxo e Refluxo</em>.</p>
+                <div class="buy-box">
+                    <p>✅ Programação Semanal | ✅ Bivolt | ✅ Fácil Configuração</p>
+                    <a href="https://amzn.to/4wdlDAa" target="_blank" class="cta-buy">Ver Preço do Timer →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AdSense Estratégico -->
+        <div style="text-align:center; margin: 50px 0;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8996333447529356" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
+
+        <p class="disclaimer">
+            <strong>Transparência:</strong> Como associado da Amazon, recebemos uma pequena comissão por compras qualificadas. Isso não aumenta o custo para você e ajuda a manter este projeto educativo online.
+        </p>
 
     </div>
 
     <div id="footer-placeholder"></div>
 
-    <!-- Script de Carregamento Modular -->
     <script>
         function loadComponent(id, file) {
             fetch(file)
                 .then(response => response.text())
-                .then(data => { document.getElementById(id).innerHTML = data; });
+                .then(data => { document.getElementById(id).innerHTML = data; })
+                .catch(err => console.error('Erro ao carregar:', err));
         }
         loadComponent('menu-placeholder', 'menu.html');
         loadComponent('footer-placeholder', 'footer.html');
