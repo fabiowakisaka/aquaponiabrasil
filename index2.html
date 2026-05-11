@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- REINTEGRAÇÃO: Google AdSense -->
+    <!-- REINTEGRAÇÃO DE SCRIPTS GLOBAIS (Analytics e AdSense) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
-
-    <!-- REINTEGRAÇÃO: Google Analytics (Gtag) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,7 +13,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquaponia Brasil - Tudo sobre Aquaponia no Brasil</title>
+    <title>Aquaponia Brasil - Produza Alimentos Saudáveis em Casa</title>
     <meta name="description" content="Tudo sobre Aquaponia no Brasil. Aprenda a montar seu sistema residencial orgânico.">
     
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
@@ -24,7 +22,7 @@
         :root {
             --primary: #69A84F;
             --secondary: #415239;
-            --dark: #333;
+            --dark: #222;
             --white: #ffffff;
             --light-bg: #f9f9f9;
         }
@@ -37,23 +35,7 @@
             line-height: 1.6;
         }
 
-        header {
-            background: var(--white);
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px solid var(--primary);
-        }
-
-        .logo-text {
-            font-family: 'Source Serif Pro', serif;
-            font-size: 26px;
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
+        /* HERO SECTION - FOCO NA NITIDEZ */
         .hero {
             position: relative;
             height: 500px;
@@ -116,6 +98,7 @@
             transform: scale(1.05);
         }
 
+        /* CAPTURA DE LEADS */
         .capture-box {
             background: var(--light-bg);
             padding: 50px 5%;
@@ -131,6 +114,7 @@
             margin-right: 10px;
         }
 
+        /* GRID DE ARTIGOS */
         .main-grid {
             padding: 60px 5%;
             display: grid;
@@ -152,48 +136,12 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
 
-        .card h3 {
-            color: var(--primary);
-            margin-top: 0;
-        }
+        .card h3 { color: var(--primary); margin-top: 0; }
+        .card ul { padding: 0; list-style: none; }
+        .card ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+        .card ul li a { text-decoration: none; color: var(--dark); }
 
-        .card ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        .card ul li {
-            padding: 8px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .card ul li a {
-            text-decoration: none;
-            color: var(--dark);
-        }
-
-        .card ul li a:hover {
-            color: var(--primary);
-        }
-
-        .instagram-section {
-            padding: 60px 5%;
-            text-align: center;
-            background: white;
-        }
-
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 40px 5%;
-            text-align: center;
-        }
-
-        .ad-placeholder {
-            min-height: 100px;
-            margin: 20px auto;
-            text-align: center;
-        }
+        .instagram-section { padding: 60px 5%; text-align: center; background: white; }
 
         @media (max-width: 600px) {
             .hero h1 { font-size: 28px; }
@@ -203,89 +151,88 @@
 </head>
 <body>
 
-<header>
-    <a href="index.html" class="logo-text">Aquaponia Brasil</a>
-    <nav>
-        <a href="artigos.html" style="text-decoration:none; color:var(--dark); font-weight:bold;">Artigos</a>
-    </nav>
-</header>
+    <!-- PLACEHOLDER DO MENU DINÂMICO -->
+    <div id="menu-placeholder"></div>
 
-<section class="hero">
-    <img src="Home_arquivos/logogrande.jpg" alt="Aquaponia Brasil" class="hero-img">
-    <div class="hero-content">
-        <h1>Produza Alimentos Saudáveis em sua Casa</h1>
-        <p>Aprenda a unir a criação de peixes com o cultivo de vegetais orgânicos. Terapia, economia e saúde em um só lugar.</p>
-        <a href="#aprender" class="cta-button">Quero Aprender Agora</a>
+    <section class="hero">
+        <img src="Home_arquivos/logogrande.jpg" alt="Aquaponia Brasil" class="hero-img">
+        <div class="hero-content">
+            <h1>Alimentos Saudáveis e Terapia em sua Casa</h1>
+            <p>Descubra como unir a criação de peixes com o cultivo de vegetais orgânicos em qualquer espaço.</p>
+            <a href="#aprender" class="cta-button">Quero Aprender Agora</a>
+        </div>
+    </section>
+
+    <!-- ADSENSE ESTRATÉGICO -->
+    <div style="text-align:center; margin: 20px 0;">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8996333447529356"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-</section>
 
-<!-- ESPAÇO PARA ADSENSE -->
-<div class="ad-placeholder">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-8996333447529356"
-         data-ad-slot="auto"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+    <section class="capture-box">
+        <h2>Guia Gratuito: Onde Começar?</h2>
+        <p>Receba em seu e-mail nosso guia técnico para evitar os erros mais comuns de iniciantes.</p>
+        <form action="#">
+            <input type="email" placeholder="Seu melhor e-mail" required>
+            <button type="submit" class="cta-button">Receber Guia</button>
+        </form>
+    </section>
+
+    <main class="main-grid" id="aprender">
+        <div class="card">
+            <h3>🏗️ Estrutura e Montagem</h3>
+            <ul>
+                <li><a href="passo-a-passo-aquaponia.html">Passo-a-passo Completo</a></li>
+                <li><a href="como-construir-um-sistema-de-aquaponia.html">Como Construir</a></li>
+                <li><a href="equipamentos.html"><strong>Equipamentos Recomendados</strong></a></li>
+                <li><a href="os-filtros.html">Sistemas de Filtros</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Sustentabilidade</h3>
+            <ul>
+                <li><a href="o-que-e-a-aquaponia.html">O que é Aquaponia?</a></li>
+                <li><a href="aquaponia-repllicacao-da-natureza.html">Replicação da Natureza</a></li>
+                <li><a href="aquaponia-como-projeto-de-reintegracao-social.html">Projetos Sociais</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>💧 Manutenção e Manejo</h3>
+            <ul>
+                <li><a href="lemna-ou-lentilha-dagua.html">Lentilha d'água (Lemna)</a></li>
+                <li><a href="tanque-de-peixes-sempre-limpo.html">Tanque Sempre Limpo</a></li>
+                <li><a href="tpa-troca-periodica-da-agua.html">Troca de Água (TPA)</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <section class="instagram-section">
+        <h2>Siga nossa rotina no Instagram</h2>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/aquaponiabrasil/" data-instgrm-version="14" style="margin:auto;"></blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+    </section>
+
+    <!-- PLACEHOLDER DO FOOTER DINÂMICO -->
+    <div id="footer-placeholder"></div>
+
+    <!-- SCRIPT DE CARREGAMENTO DOS COMPONENTES -->
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => { document.getElementById(id).innerHTML = data; })
+                .catch(err => console.error('Erro ao carregar componente:', err));
+        }
+        loadComponent('menu-placeholder', 'menu.html');
+        loadComponent('footer-placeholder', 'footer.html');
     </script>
-</div>
-
-<section class="capture-box">
-    <h2>Guia Gratuito de Introdução</h2>
-    <p>Cadastre-se para receber as melhores dicas de montagem e manejo diretamente no seu e-mail.</p>
-    <form action="#">
-        <input type="email" placeholder="Seu melhor e-mail" required>
-        <button type="submit" class="cta-button">Receber Guia</button>
-    </form>
-</section>
-
-<main class="main-grid" id="aprender">
-    <div class="card">
-        <h3>🏗️ Estrutura e Montagem</h3>
-        <ul>
-            <li><a href="passo-a-passo-aquaponia.html">Passo-a-passo Completo</a></li>
-            <li><a href="como-construir-um-sistema-de-aquaponia.html">Como Construir</a></li>
-            <li><a href="o-tanque-de-peixes.html">O Tanque de Peixes</a></li>
-            <li><a href="os-filtros.html">Sistemas de Filtros</a></li>
-            <li><a href="desnivel.html">Cálculo de Desnível</a></li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>🌱 Sustentabilidade</h3>
-        <ul>
-            <li><a href="o-que-e-a-aquaponia.html">O que é Aquaponia?</a></li>
-            <li><a href="aquaponia-repllicacao-da-natureza.html">Replicação da Natureza</a></li>
-            <li><a href="aquaponia-como-projeto-de-reintegracao-social.html">Projetos Sociais</a></li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>💧 Manutenção e Manejo</h3>
-        <ul>
-            <li><a href="lemna-ou-lentilha-dagua.html">Lentilha d'água (Lemna)</a></li>
-            <li><a href="tanque-de-peixes-sempre-limpo.html">Tanque Sempre Limpo</a></li>
-            <li><a href="tpa-troca-periodica-da-agua.html">Troca de Água (TPA)</a></li>
-            <li><a href="limpeza-das-camas-de-cultivo.html">Camas de Cultivo</a></li>
-        </ul>
-    </div>
-</main>
-
-<section class="instagram-section">
-    <h2>Acompanhe no Instagram</h2>
-    <p>Dicas diárias e fotos dos nossos sistemas.</p>
-    <!-- REINTEGRAÇÃO: Instagram Widget -->
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/aquaponiabrasil/" data-instgrm-version="14" style="margin:auto;"></blockquote>
-    <script async src="//www.instagram.com/embed.js"></script>
-</section>
-
-<footer>
-    <p><strong>Aquaponia Brasil</strong> - Desde 2016 organizando o conhecimento.</p>
-    <p>Americana - SP</p>
-    <p style="font-size: 12px; opacity: 0.6;">Copyright © 2026</p>
-</footer>
 
 </body>
 </html>
