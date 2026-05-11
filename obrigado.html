@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Scripts de Rastreamento e Monetização -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JB0HG78W4F');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Liberado - Aquaponia Brasil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; }
+        body { font-family: 'Raleway', sans-serif; margin: 0; background: #fdfdfd; color: var(--dark); line-height: 1.6; }
+        
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; text-align: center; }
+        
+        .success-icon { font-size: 50px; color: var(--primary); margin-bottom: 20px; }
+        h1 { font-family: 'Source Serif Pro', serif; font-size: 32px; color: var(--dark); }
+        .subtext { font-size: 18px; color: #666; margin-bottom: 40px; }
+
+        /* Box de Download */
+        .download-box { 
+            background: #f0f7ed; 
+            border: 2px dashed var(--primary); 
+            padding: 40px; 
+            border-radius: 15px; 
+            margin-bottom: 60px;
+        }
+        .btn-download { 
+            background: var(--primary); 
+            color: white; 
+            padding: 20px 40px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            font-size: 20px; 
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn-download:hover { background: #558a3f; transform: scale(1.05); }
+
+        /* Seção de Próximo Passo */
+        .next-step { background: var(--white); border: 1px solid #eee; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .next-step h2 { font-family: 'Source Serif Pro', serif; color: var(--accent); }
+        .btn-secondary { 
+            color: var(--primary); 
+            text-decoration: underline; 
+            font-weight: bold; 
+            font-size: 18px; 
+            display: inline-block; 
+            margin-top: 20px; 
+        }
+
+        .ad-space { margin-top: 50px; min-height: 100px; }
+    </style>
+</head>
+<body>
+
+    <div id="menu-placeholder"></div>
+
+    <div class="container">
+        <div class="success-icon">✓</div>
+        <h1>Tudo certo! Seu acesso foi liberado.</h1>
+        <p class="subtext">O Manual Técnico de Introdução à Aquaponia já está disponível para você.</p>
+
+        <section class="download-box">
+            <p>Clique no botão abaixo para abrir o manual (PDF):</p>
+            <!-- Link para o seu arquivo PDF no GitHub -->
+            <a href="docs/guia-introducao-aquaponia.pdf" class="btn-download" target="_blank">📥 BAIXAR MANUAL AGORA</a>
+            <p style="font-size: 12px; color: #888; margin-top: 15px;">Dica: Salve o arquivo em seu dispositivo para consultas futuras.</p>
+        </section>
+
+        <section class="next-step">
+            <h2>Dica de Especialista</h2>
+            <p>Ler o manual é o primeiro passo, mas ter os <strong>componentes corretos</strong> é o que separa um sistema que produz de um sistema que vira um criadouro de mosquitos.</p>
+            <p>Preparei uma lista técnica com os equipamentos que eu pessoalmente validei para operação contínua.</p>
+            <a href="equipamentos.html" class="btn-secondary">Acesse aqui a Lista de Componentes Homologados →</a>
+        </section>
+
+        <div class="ad-space">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8996333447529356" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        function loadComponent(id, file) {
+            fetch(file).then(r => r.text()).then(d => document.getElementById(id).innerHTML = d);
+        }
+        loadComponent('menu-placeholder', 'menu.html');
+        loadComponent('footer-placeholder', 'footer.html');
+    </script>
+</body>
+</html>
