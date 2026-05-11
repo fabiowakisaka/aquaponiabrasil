@@ -13,8 +13,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquaponia Brasil - Produza Alimentos Saudáveis em Casa</title>
-    <meta name="description" content="Tudo sobre Aquaponia no Brasil. Aprenda a montar seu sistema residencial orgânico.">
+    <title>Aquaponia Brasil - Produza Alimentos Saudáveis e Orgânicos em Casa</title>
+    <meta name="description" content="Aprenda a montar seu sistema de aquaponia residencial. Guia completo sobre peixes, filtros, biologia e cultivo orgânico sustentável.">
     
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     
@@ -24,7 +24,7 @@
             --secondary: #415239;
             --dark: #222;
             --white: #ffffff;
-            --light-bg: #f9f9f9;
+            --light-bg: #f4f4f4;
         }
 
         body {
@@ -33,12 +33,13 @@
             padding: 0;
             color: var(--dark);
             line-height: 1.6;
+            background-color: var(--white);
         }
 
-        /* HERO SECTION - FOCO NA NITIDEZ */
+        /* HERO SECTION */
         .hero {
             position: relative;
-            height: 500px;
+            height: 550px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -56,69 +57,67 @@
             height: 100%;
             object-fit: cover;
             z-index: 1;
-            opacity: 0.7;
+            opacity: 0.6; /* Escurecido para dar leitura ao texto */
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 800px;
+            max-width: 850px;
             padding: 0 20px;
         }
 
         .hero h1 {
             font-family: 'Source Serif Pro', serif;
-            font-size: 46px;
-            margin: 0 0 15px 0;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+            font-size: clamp(32px, 8vw, 52px);
+            margin: 0 0 20px 0;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+            line-height: 1.1;
         }
 
         .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+            font-size: clamp(18px, 4vw, 22px);
+            margin-bottom: 35px;
+            text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+            font-weight: 400;
         }
 
         .cta-button {
             background: var(--primary);
             color: white;
-            padding: 18px 35px;
+            padding: 20px 40px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 20px;
             transition: 0.3s;
             display: inline-block;
             border: none;
             cursor: pointer;
+            box-shadow: 0 4px 15px rgba(105, 168, 79, 0.4);
         }
 
         .cta-button:hover {
-            background: var(--secondary);
-            transform: scale(1.05);
+            background: #558a3f;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(105, 168, 79, 0.6);
         }
 
         /* CAPTURA DE LEADS */
         .capture-box {
             background: var(--light-bg);
-            padding: 50px 5%;
+            padding: 60px 5%;
             text-align: center;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
         }
-
-        .capture-box input[type="email"] {
-            padding: 15px;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
+        
+        .capture-box h2 { font-family: 'Source Serif Pro', serif; font-size: 28px; margin-bottom: 10px; }
 
         /* GRID DE ARTIGOS */
         .main-grid {
-            padding: 60px 5%;
+            padding: 80px 5%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             max-width: 1200px;
             margin: 0 auto;
@@ -127,44 +126,64 @@
         .card {
             background: white;
             border: 1px solid #eee;
-            padding: 25px;
-            border-radius: 10px;
+            padding: 35px;
+            border-radius: 12px;
             transition: 0.3s;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+            border-color: var(--primary);
         }
 
-        .card h3 { color: var(--primary); margin-top: 0; }
-        .card ul { padding: 0; list-style: none; }
-        .card ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
-        .card ul li a { text-decoration: none; color: var(--dark); }
+        .card h3 { 
+            color: var(--primary); 
+            font-family: 'Source Serif Pro', serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
 
-        .instagram-section { padding: 60px 5%; text-align: center; background: white; }
+        .card ul { padding: 0; list-style: none; margin: 0; }
+        .card ul li { padding: 12px 0; border-bottom: 1px solid #f9f9f9; }
+        .card ul li a { 
+            text-decoration: none; 
+            color: #444; 
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .card ul li a:hover { color: var(--primary); padding-left: 5px; }
+
+        .instagram-section { padding: 80px 5%; text-align: center; background: #fff; }
+        .instagram-section h2 { font-family: 'Source Serif Pro', serif; margin-bottom: 40px; }
 
         @media (max-width: 600px) {
-            .hero h1 { font-size: 28px; }
-            .capture-box input[type="email"] { width: 100%; margin-bottom: 10px; }
+            .hero { height: 450px; }
+            .hero h1 { font-size: 32px; }
+            .main-grid { padding: 40px 5%; }
         }
     </style>
 </head>
 <body>
 
-    <!-- PLACEHOLDER DO MENU DINÂMICO -->
     <div id="menu-placeholder"></div>
 
     <section class="hero">
-        <img src="Home_arquivos/logogrande.jpg" alt="Aquaponia Brasil" class="hero-img">
+        <!-- Substitua pela sua imagem de alta resolução se preferir -->
+        <img src="Home_arquivos/logogrande.jpg" alt="Aquaponia Brasil - Cultivo Sustentável" class="hero-img">
         <div class="hero-content">
             <h1>Alimentos Saudáveis e Terapia em sua Casa</h1>
             <p>Descubra como unir a criação de peixes com o cultivo de vegetais orgânicos em qualquer espaço.</p>
-            <a href="#aprender" class="cta-button">Quero Aprender Agora</a>
+            <a href="guia-gratuito.html" class="cta-button">Baixar Guia Técnico Grátis</a>
         </div>
     </section>
 
     <!-- ADSENSE ESTRATÉGICO -->
-    <div style="text-align:center; margin: 20px 0;">
+    <div style="text-align:center; margin: 40px 0;">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-8996333447529356"
@@ -175,54 +194,58 @@
     </div>
 
     <section class="capture-box">
-        <h2>Guia Gratuito: Onde Começar?</h2>
-        <p>Receba em seu e-mail nosso guia técnico para evitar os erros mais comuns de iniciantes.</p>
-        <form action="#">
-            <input type="email" placeholder="Seu melhor e-mail" required>
-            <button type="submit" class="cta-button">Receber Guia</button>
-        </form>
+        <h2>Inicie seu projeto sem erros</h2>
+        <p>Aprenda o passo a passo biológico para garantir a saúde dos seus peixes e plantas.</p>
+        <br>
+        <a href="guia-gratuito.html" class="cta-button" style="background: var(--dark);">Quero receber o Guia por E-mail</a>
     </section>
 
     <main class="main-grid" id="aprender">
+        <!-- Card 1 -->
         <div class="card">
             <h3>🏗️ Estrutura e Montagem</h3>
             <ul>
-                <li><a href="passo-a-passo-aquaponia.html">Passo-a-passo Completo</a></li>
-                <li><a href="como-construir-um-sistema-de-aquaponia.html">Como Construir</a></li>
-                <li><a href="equipamentos.html"><strong>Equipamentos Recomendados</strong></a></li>
-                <li><a href="os-filtros.html">Sistemas de Filtros</a></li>
+                <li><a href="passo-a-passo-aquaponia.html">Passo a Passo Inicial</a></li>
+                <li><a href="como-construir-um-sistema-de-aquaponia.html">Manual de Construção</a></li>
+                <li><a href="o-tanque-de-peixes.html">O Tanque de Peixes (Base)</a></li>
+                <li><a href="os-filtros.html">Sistemas de Filtragem</a></li>
+                <li><a href="desnivel.html">A Importância do Desnível</a></li>
             </ul>
         </div>
 
+        <!-- Card 2 -->
         <div class="card">
             <h3>🌱 Sustentabilidade</h3>
             <ul>
                 <li><a href="o-que-e-a-aquaponia.html">O que é Aquaponia?</a></li>
                 <li><a href="aquaponia-repllicacao-da-natureza.html">Replicação da Natureza</a></li>
-                <li><a href="aquaponia-como-projeto-de-reintegracao-social.html">Projetos Sociais</a></li>
+                <li><a href="aquaponia-como-projeto-de-reintegracao-social.html">Impacto e Projetos Sociais</a></li>
+                <li><a href="equipamentos.html"><strong>Lista de Equipamentos 2026</strong></a></li>
             </ul>
         </div>
 
+        <!-- Card 3 -->
         <div class="card">
             <h3>💧 Manutenção e Manejo</h3>
             <ul>
-                <li><a href="lemna-ou-lentilha-dagua.html">Lentilha d'água (Lemna)</a></li>
+                <li><a href="lemna-ou-lentilha-dagua.html">Super Alimento: Lemna</a></li>
                 <li><a href="tanque-de-peixes-sempre-limpo.html">Tanque Sempre Limpo</a></li>
                 <li><a href="tpa-troca-periodica-da-agua.html">Troca de Água (TPA)</a></li>
+                <li><a href="limpeza-das-camas-de-cultivo.html">Limpeza das Growbeds</a></li>
             </ul>
         </div>
     </main>
 
     <section class="instagram-section">
-        <h2>Siga nossa rotina no Instagram</h2>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/aquaponiabrasil/" data-instgrm-version="14" style="margin:auto;"></blockquote>
+        <h2>Acompanhe a Aquaponia Brasil</h2>
+        <p>Siga nossa rotina e veja os sistemas em funcionamento no Instagram.</p>
+        <br>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/aquaponiabrasil/" data-instgrm-version="14" style="margin:auto; max-width: 540px;"></blockquote>
         <script async src="//www.instagram.com/embed.js"></script>
     </section>
 
-    <!-- PLACEHOLDER DO FOOTER DINÂMICO -->
     <div id="footer-placeholder"></div>
 
-    <!-- SCRIPT DE CARREGAMENTO DOS COMPONENTES -->
     <script>
         function loadComponent(id, file) {
             fetch(file)
