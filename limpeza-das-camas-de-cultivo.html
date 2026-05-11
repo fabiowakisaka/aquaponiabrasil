@@ -30,14 +30,15 @@
         .content a { color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--primary); transition: 0.2s; }
         .content a:hover { background: #eff7e9; border-bottom-style: solid; }
 
-        /* Blocos de Destaque */
         .warning-box { background: #fffdf5; border-left: 6px solid var(--warning); padding: 25px; margin: 35px 0; border-radius: 0 10px 10px 0; }
         .warning-box strong { color: #8a6d3b; }
         
         .step-card { background: #f4f4f4; border-radius: 12px; padding: 30px; margin: 30px 0; }
         .step-card h3 { color: var(--primary); margin-top: 0; }
 
-        /* Vitrine Amazon */
+        .article-img { width: 100%; max-width: 600px; display: block; margin: 35px auto 10px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .img-caption { text-align: center; font-size: 15px; color: #666; margin-bottom: 40px; display: block; font-style: italic; }
+
         .amazon-showcase { background: #eef5eb; border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid var(--primary); text-align: center; }
         .amazon-showcase h4 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 25px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
@@ -63,6 +64,9 @@
     <div class="container">
         <article class="content">
             <p>As **camas de cultivo** (ou <i>growbeds</i>) funcionam como o filtro biológico final do seu sistema. Com o tempo, é natural que ocorra o acúmulo de detritos: raízes antigas, folhas secas e o excesso de matéria orgânica que escapou dos <a href="os-filtros.html">filtros mecânicos</a>.</p>
+
+            <img src="Home_arquivos/passoapasso02.jpg" alt="Cama de cultivo em funcionamento" class="article-img">
+            <span class="img-caption">Camas de cultivo: integrando plantas e filtragem biológica.</span>
 
             <div class="warning-box">
                 <p><strong>ERRO FATAL:</strong> Nunca limpe todas as suas camas de cultivo ao mesmo tempo. É nelas que reside a maior parte das bactérias nitrificantes. Se você lavar tudo, causará um colapso no <a href="o-tanque-de-peixes.html">ciclo do nitrogênio</a>, o que pode matar seus peixes por picos de amônia.</p>
@@ -103,8 +107,8 @@
         </article>
 
         <div class="nav-footer">
-            <p><strong>Dúvidas sobre o funcionamento técnico?</strong></p>
-            <a href="aquaponia.html" class="btn-next">Entenda Tudo Sobre Aquaponia →</a>
+            <p><strong>Ainda tem dúvidas sobre o funcionamento?</strong></p>
+            <a href="o-que-e-a-aquaponia.html" class="btn-next">Entenda o Conceito da Aquaponia →</a>
         </div>
     </div>
 
