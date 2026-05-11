@@ -1,38 +1,111 @@
 <style>
-    .global-footer { background: #222; color: #fff; padding: 60px 5% 20px; font-family: 'Raleway', sans-serif; margin-top: 50px; }
-    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto; }
-    .footer-col h4 { color: #69A84F; margin-bottom: 20px; }
-    .footer-col ul { list-style: none; padding: 0; }
-    .footer-col ul li { margin-bottom: 10px; }
-    .footer-col a { color: #ccc; text-decoration: none; font-size: 14px; }
-    .footer-col a:hover { color: #fff; }
-    .footer-bottom { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #333; font-size: 12px; color: #666; }
+    .footer-section {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        padding: 60px 5% 30px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .footer-grid {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 40px;
+    }
+
+    .footer-col h3 {
+        color: #69A84F;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .footer-col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-col ul li {
+        margin-bottom: 12px;
+    }
+
+    .footer-col ul li a {
+        color: #bbb;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 15px;
+    }
+
+    .footer-col ul li a:hover {
+        color: #69A84F;
+        padding-left: 5px;
+    }
+
+    .footer-bottom {
+        max-width: 1100px;
+        margin: 30px auto 0;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .brand-footer {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 24px;
+        color: #69A84F;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+    }
 </style>
 
-<footer class="global-footer">
+<footer class="footer-section">
     <div class="footer-grid">
+        <!-- Coluna 1: O Sistema -->
         <div class="footer-col">
-            <h4>Aquaponia Brasil</h4>
-            <p style="font-size: 14px; color: #ccc;">Desde 2016 democratizando o cultivo sustentável no Brasil.</p>
-        </div>
-        <div class="footer-col">
-            <h4>Navegação</h4>
+            <h3>Estrutura do Sistema</h3>
             <ul>
-                <li><a href="index2.html">Home</a></li>
-                <li><a href="equipamentos.html">Equipamentos</a></li>
-                <li><a href="artigos.html">Artigos Técnicos</a></li>
+                <li><a href="passo-a-passo-aquaponia.html">Passo a Passo Inicial</a></li>
+                <li><a href="como-construir-um-sistema-de-aquaponia.html">Como Construir</a></li>
+                <li><a href="o-tanque-de-peixes.html">O Tanque de Peixes</a></li>
+                <li><a href="os-filtros.html">Os Filtros</a></li>
+                <li><a href="desnivel.html">A Importância do Desnível</a></li>
             </ul>
         </div>
+
+        <!-- Coluna 2: Manutenção -->
         <div class="footer-col">
-            <h4>Social</h4>
+            <h3>Manutenção e Biologia</h3>
             <ul>
-                <li><a href="https://instagram.com/aquaponiabrasil">Instagram</a></li>
-                <li><a href="#">YouTube</a></li>
+                <li><a href="lemna-ou-lentilha-dagua.html">Lemnas (Super Alimento)</a></li>
+                <li><a href="tanque-de-peixes-sempre-limpo.html">Tanque Sempre Limpo</a></li>
+                <li><a href="tpa-troca-periodica-da-agua.html">TPA (Troca de Água)</a></li>
+                <li><a href="limpeza-das-camas-de-cultivo.html">Limpeza das Camas</a></li>
+                <li><a href="equipamentos.html">Equipamentos Homologados</a></li>
+            </ul>
+        </div>
+
+        <!-- Coluna 3: Institucional -->
+        <div class="footer-col">
+            <h3>Sustentabilidade</h3>
+            <ul>
+                <li><a href="o-que-e-a-aquaponia.html">O que é Aquaponia?</a></li>
+                <li><a href="aquaponia-repllicacao-da-natureza.html">Replicação da Natureza</a></li>
+                <li><a href="aquaponia-como-projeto-de-reintegracao-social.html">Reintegração Social</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
             </ul>
         </div>
     </div>
+
     <div class="footer-bottom">
-        &copy; 2026 Aquaponia Brasil - Americana, SP. <br>
-        Alguns links nesta página são de afiliados. Você não paga nada a mais, mas nos ajuda a crescer.
+        <span class="brand-footer">Aquaponia Brasil</span>
+        <p>Desenvolvendo tecnologias sustentáveis para o cultivo residencial.<br>
+        Americana, SP | © 2026 Aquaponia Brasil</p>
     </div>
 </footer>
