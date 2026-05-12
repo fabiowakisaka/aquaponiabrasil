@@ -25,18 +25,25 @@
         :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #333; --light-bg: #f4f4f4; --warning: #f0ad4e; }
         body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--text); line-height: 1.8; background-color: var(--white); }
         .container { padding: 40px 5%; max-width: 900px; margin: 0 auto; }
+        
         header.page-title { text-align: center; padding: 60px 20px; background: var(--dark); color: white; margin-bottom: 40px; }
         header.page-title h1 { font-family: 'Source Serif Pro', serif; font-size: clamp(24px, 5vw, 40px); color: var(--primary); margin: 0; }
+        
         .content { font-size: 18px; text-align: left; }
         .content p { margin-bottom: 25px; }
         .content a { color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--primary); transition: 0.2s; }
         .content a:hover { background: #eff7e9; border-bottom-style: solid; }
+        
         .warning-box { background: #fffdf5; border-left: 6px solid var(--warning); padding: 25px; margin: 35px 0; border-radius: 0 10px 10px 0; }
+        
         .lead-banner { background: #eff7e9; border: 2px solid var(--primary); padding: 40px 20px; border-radius: 15px; margin: 50px 0; text-align: center; }
         .btn-lead { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; transition: 0.3s; border: none; }
         .btn-lead:hover { background: #558a3f; transform: scale(1.02); }
+        
         .step-card { background: #f4f4f4; border-radius: 12px; padding: 30px; margin: 30px 0; }
         .step-card h3 { color: var(--primary); margin-top: 0; }
+        
+        /* Vitrine de Performance */
         .amazon-showcase { background: #eef5eb; border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid var(--primary); text-align: center; }
         .amazon-showcase h4 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 25px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
@@ -44,8 +51,12 @@
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .product-card img { max-width: 150px; height: 150px; object-fit: contain; margin-bottom: 15px; }
         .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 20px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 14px; border: none; margin-top: auto; }
+        
+        /* Navegação Rodapé */
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
-        .btn-next { color: var(--primary); font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--primary); font-size: 18px; }
+        .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; border: none; transition: 0.3s; }
+        .btn-next:hover { background: #558a3f; transform: scale(1.02); }
+
         @media (max-width: 600px) { .content { font-size: 16px; } }
     </style>
 </head>
@@ -91,13 +102,11 @@
                 <h4>Componentes de Performance para seu Cultivo</h4>
                 <p>Após a manutenção, garanta que a oxigenação e a área de superfície bacteriana estejam em nível máximo:</p>
                 <div class="product-grid">
-                    <!-- Componente 01: Bomba Ocean Tech -->
                     <div class="product-card">
                         <img src="https://m.media-amazon.com/images/I/61uRVgftIqL._AC_SL1280_.jpg" alt="Bomba Ocean Tech">
                         <p><b>Bomba Ocean Tech AC Pump</b><br>Alta eficiência energética para manter o fluxo constante nas camas.</p>
                         <a href="https://amzn.to/4tu4YFZ" class="btn-amazon" target="_blank">Ver na Amazon →</a>
                     </div>
-                    <!-- Componente 02: Nano Rings -->
                     <div class="product-card">
                         <img src="https://m.media-amazon.com/images/I/614zeGaEaIL._AC_SL1199_.jpg" alt="Nano Rings">
                         <p><b>Nano Rings High Energy</b><br>Aumente drasticamente a capacidade de filtragem biológica das suas camas.</p>
