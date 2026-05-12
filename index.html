@@ -20,57 +20,64 @@
         :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #575550; --light: #f5f8fa; }
         body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--text); line-height: 1.6; }
         
-        /* Hero Section com Imagem e Opacidade */
+        /* Hero com Overlay de Opacidade */
         .hero-banner { 
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('Home_arquivos/feature-three_002.jpg'); 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Home_arquivos/feature-three_002.jpg'); 
             background-size: cover; 
             background-position: center; 
             color: white; 
-            padding: 100px 5% 60px; 
+            padding: 100px 5% 80px; 
             text-align: center; 
         }
-        .hero-banner h1 { font-family: 'Source Serif Pro', serif; font-size: clamp(32px, 6vw, 54px); margin: 0; color: white; }
-        .hero-banner p { font-size: 20px; max-width: 800px; margin: 20px auto; opacity: 0.95; }
+        .hero-banner h1 { font-family: 'georgia', serif; font-size: clamp(32px, 6vw, 54px); margin: 0; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero-banner p { font-size: 22px; max-width: 850px; margin: 25px auto; opacity: 0.9; }
 
-        /* Container de Vídeos Lado a Lado */
-        .video-hub { 
+        /* Container de Mídia Lado a Lado */
+        .media-hub { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 20px; 
-            max-width: 1000px; 
-            margin: -40px auto 60px; 
+            grid-template-columns: 1.2fr 1fr; 
+            gap: 30px; 
+            max-width: 1100px; 
+            margin: -60px auto 60px; 
             padding: 0 20px;
         }
-        .video-card { 
+        
+        .video-box { 
             background: white; 
-            border-radius: 15px; 
+            border-radius: 12px; 
             overflow: hidden; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
-            border: 3px solid var(--primary);
-            aspect-ratio: 9 / 16;
-            position: relative;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2); 
+            border: 4px solid var(--primary);
+            height: fit-content;
         }
-        .video-card iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        /* Youtube Responsivo */
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+        .instagram-box { 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15); 
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
 
         .container { padding: 40px 5%; max-width: 1100px; margin: 0 auto; text-align: center; }
         
-        /* Vitrine Amazon Estratégica (Foco em 2 links) */
+        /* Vitrine de Conversão Amazon */
         .amazon-showcase { background: var(--light); padding: 50px 5%; border-radius: 20px; margin: 40px 0; border: 1px solid #ddd; }
-        .product-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 30px; 
-            margin-top: 30px;
-            justify-content: center;
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
+        .product-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; border-top: 5px solid var(--primary); }
+        .product-card img { width: 140px; height: 140px; object-fit: contain; margin-bottom: 15px; }
+        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 30px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 15px; margin-top: auto; transition: 0.3s; }
+        .btn-amazon:hover { background: #e68a00; transform: translateY(-2px); }
+
+        .btn-cta { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; margin: 30px 0; transition: 0.3s; }
+
+        @media (max-width: 900px) { 
+            .media-hub { grid-template-columns: 1fr; } 
+            .hero-banner { padding-top: 60px; }
         }
-        .product-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; border-bottom: 4px solid var(--accent); }
-        .product-card img { width: 140px; height: 140px; object-fit: contain; margin-bottom: 20px; }
-        .product-card h4 { margin: 10px 0; color: var(--dark); font-size: 18px; }
-        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 14px; margin-top: auto; }
-
-        .btn-main { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; margin: 20px 0; }
-
-        @media (max-width: 768px) { .video-hub { grid-template-columns: 1fr; max-width: 400px; } }
     </style>
 </head>
 
@@ -78,59 +85,69 @@
 
     <div id="menu-placeholder"></div>
 
-    <!-- 1. HERO COM IMAGEM ORIGINAL E OPACIDADE -->
+    <!-- SEÇÃO HERO: PROMESSA E VALOR -->
     <section class="hero-banner">
-        <h1>Produza Alimentos Orgânicos no seu Quintal</h1>
-        <p>A Aquaponia Brasil simplifica a tecnologia que une a criação de peixes ao cultivo de plantas. Saúde, terapia e sustentabilidade em um só lugar.</p>
-        <a href="passo-a-passo-aquaponia.html" class="btn-main">Começar Agora →</a>
+        <h1>Sua Fonte de Alimento em Casa</h1>
+        <p>Aprenda como cultivar hortaliças frescas e criar peixes saudáveis no seu quintal com a tecnologia da Aquaponia Brasil.</p>
+        <a href="passo-a-passo-aquaponia.html" class="btn-cta">Ver Passo a Passo →</a>
     </section>
 
-    <!-- 2. HUB DE VÍDEOS: YOUTUBE E INSTAGRAM LADO A LADO -->
-    <div class="video-hub">
-        <!-- Player do YouTube Shorts -->
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/nkYDTghOFXw" title="YouTube Shorts" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- SEÇÃO DE MÍDIA: YOUTUBE + INSTAGRAM NATIVO -->
+    <div class="media-hub">
+        <!-- Player YouTube -->
+        <div class="video-box">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/z1-fb3tpjbc?si=sFyT-RpSpxJxgIzw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div style="padding: 15px; text-align: center; background: #f9f9f9;">
+                <strong>Vídeo em Destaque: Fundamentos da Aquaponia</strong>
+            </div>
         </div>
         
-        <!-- Player do Instagram -->
-        <div class="video-card">
-            <iframe src="https://www.instagram.com/reels/videos/nkYDTghOFXw/embed" allowtransparency="true" allowfullscreen="true" frameborder="0"></iframe>
+        <!-- Bloco Instagram (Capturado do seu index_old) -->
+        <div class="instagram-box">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CMJAUBzAbh6/" data-instgrm-version="14" style="background:#FFF; border:0; margin:0; width:100%;">
+                <div style="padding:16px;"> 
+                    <a href="https://www.instagram.com/p/CMJAUBzAbh6/" style="background:#FFFFFF; line-height:0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                        Ver post no Instagram @aquaponiabrasil
+                    </a>
+                </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
         </div>
     </div>
 
     <div class="container">
-        <h2>Domine o Ecossistema</h2>
-        <p>Aprenda como equilibrar a biologia do seu tanque para colher hortaliças livres de agrotóxicos.</p>
+        <h2>Pronto para começar?</h2>
+        <p>A aquaponia é mais que um hobby, é segurança alimentar para sua família. Abaixo, os itens fundamentais que eu validei e recomendo para seu primeiro sistema.</p>
 
-        <!-- 3. VITRINE DE CONVERSÃO: 2 PRODUTOS ASSERTIVOS -->
+        <!-- VITRINE AMAZON: CONVERSÃO REAL 2026 -->
         <section class="amazon-showcase">
-            <h3>Kit de Início Recomendado</h3>
-            <p>Os dois itens indispensáveis que eu validei hoje para o seu projeto:</p>
             <div class="product-grid">
-                <!-- Produto 1: Bomba PL-203 (O Pulmão) -->
+                <!-- Produto 1: Bomba PL-203 -->
                 <div class="product-card">
                     <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba PL-203">
                     <h4>Bomba Submersa 1000 L/H</h4>
-                    <p>Silenciosa e eficiente para circular o nutriente até as suas plantas.</p>
+                    <p>O coração do seu sistema. Silenciosa, econômica e bivolt. Ideal para aquaponia urbana.</p>
                     <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
                 </div>
 
-                <!-- Produto 2: Kit Alcon (O Seguro) -->
+                <!-- Produto 2: Kit Alcon -->
                 <div class="product-card">
                     <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
                     <h4>Kit de Testes Master Alcon</h4>
-                    <p>Monitore Amônia e pH. Não coloque seus peixes em risco.</p>
+                    <p>Mantenha seus peixes vivos. Monitore pH, Amônia e Nitrito com precisão profissional.</p>
                     <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
                 </div>
             </div>
         </section>
 
-        <div style="margin-top: 40px;">
-            <p><strong>Acesse nossos guias técnicos:</strong></p>
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-                <a href="os-filtros.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 5px;">Filtragem</a>
-                <a href="o-tanque-de-peixes.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 5px;">Tanques</a>
-                <a href="lemna-ou-lentilha-dagua.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 5px;">Super Alimentos</a>
+        <div style="margin-top: 50px;">
+            <h3>Explore nosso Guia Técnico</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 20px;">
+                <a href="os-filtros.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 12px 25px; border-radius: 5px;">Filtragem</a>
+                <a href="o-tanque-de-peixes.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 12px 25px; border-radius: 5px;">Tanques</a>
+                <a href="lemna-ou-lentilha-dagua.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 12px 25px; border-radius: 5px;">Alimentação</a>
             </div>
         </div>
     </div>
