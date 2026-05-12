@@ -33,22 +33,24 @@
         .warning-box { background: #fffdf5; border-left: 6px solid var(--warning); padding: 25px; margin: 35px 0; border-radius: 0 10px 10px 0; }
         .warning-box strong { color: #8a6d3b; }
         
+        /* Banner de Captura do eBook */
+        .lead-banner { background: #eff7e9; border: 2px solid var(--primary); padding: 40px 20px; border-radius: 15px; margin: 50px 0; text-align: center; }
+        .btn-lead { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; transition: 0.3s; border: none; }
+        .btn-lead:hover { background: #558a3f; transform: scale(1.02); }
+
         .step-card { background: #f4f4f4; border-radius: 12px; padding: 30px; margin: 30px 0; }
         .step-card h3 { color: var(--primary); margin-top: 0; }
-
-        .article-img { width: 100%; max-width: 600px; display: block; margin: 35px auto 10px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .img-caption { text-align: center; font-size: 15px; color: #666; margin-bottom: 40px; display: block; font-style: italic; }
 
         .amazon-showcase { background: #eef5eb; border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid var(--primary); text-align: center; }
         .amazon-showcase h4 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 25px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
         .product-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid #ddd; transition: 0.3s; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .product-card img { max-width: 120px; height: auto; margin-bottom: 15px; }
+        .product-card img { max-width: 130px; height: 140px; object-fit: contain; margin-bottom: 15px; }
         .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 20px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 14px; border: none; }
 
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
-        .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; border: none; }
+        .btn-next { color: var(--primary); font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--primary); font-size: 18px; }
 
         @media (max-width: 600px) { .content { font-size: 16px; } }
     </style>
@@ -63,52 +65,60 @@
 
     <div class="container">
         <article class="content">
-            <p>As **camas de cultivo** (ou <i>growbeds</i>) funcionam como o filtro biológico final do seu sistema. Com o tempo, é natural que ocorra o acúmulo de detritos: raízes antigas, folhas secas e o excesso de matéria orgânica que escapou dos <a href="os-filtros.html">filtros mecânicos</a>.</p>
-
-            <img src="Home_arquivos/passoapasso02.jpg" alt="Cama de cultivo em funcionamento" class="article-img">
-            <span class="img-caption">Camas de cultivo: integrando plantas e filtragem biológica.</span>
+            <p>As **camas de cultivo** funcionam como o filtro biológico final. Com o tempo, acumulam-se dejetos e raízes mortas que podem obstruir o fluxo de água e oxigênio.</p>
 
             <div class="warning-box">
-                <p><strong>ERRO FATAL:</strong> Nunca limpe todas as suas camas de cultivo ao mesmo tempo. É nelas que reside a maior parte das bactérias nitrificantes. Se você lavar tudo, causará um colapso no <a href="o-tanque-de-peixes.html">ciclo do nitrogênio</a>, o que pode matar seus peixes por picos de amônia.</p>
+                <p><strong>ERRO FATAL:</strong> Jamais limpe todas as suas camas ao mesmo tempo. Nelas residem as bactérias que mantêm seus peixes vivos. Lavar tudo de uma vez causará um pico de amônia letal no seu <a href="o-tanque-de-peixes.html">tanque</a>.</p>
+            </div>
+
+            <!-- BANNER ESTRATÉGICO DO EBOOK -->
+            <div class="lead-banner">
+                <h2 style="font-family: 'Source Serif Pro', serif; color: var(--dark); margin-top: 0;">Mantenha o Equilíbrio Biológico</h2>
+                <p style="font-size: 18px; color: #444; max-width: 650px; margin: 0 auto 30px;">
+                    A limpeza das camas exige um cronograma técnico rigoroso. Baixe o <strong>Guia Mestre de 13 Capítulos</strong> e aprenda a escalonar a manutenção para nunca colocar seus peixes em risco.
+                </p>
+                <a href="guia_gratuito.html" class="btn-lead" style="box-shadow: 0 10px 20px rgba(105, 168, 79, 0.3);">BAIXAR MANUAL TÉCNICO GRÁTIS →</a>
+                <p style="font-size: 14px; color: #777; margin-top: 15px;">PDF Gratuito • Manual de Manejo • 30 Páginas</p>
             </div>
 
             <h2>O Procedimento Correto</h2>
-            <p>Para manter o equilíbrio, a limpeza deve ser feita de forma escalonada. Se você tem duas camas, limpe uma e espere de 30 a 45 dias (tempo da <a href="passo-a-passo-aquaponia.html">ciclagem</a>) para limpar a próxima.</p>
+            <p>A limpeza deve ser escalonada. Se você possui múltiplas camas, limpe uma e aguarde 30 dias para a próxima, garantindo que as bactérias se restabeleçam.</p>
 
             <div class="step-card">
                 <h3>Passo a Passo da Limpeza:</h3>
                 <ol>
-                    <li><strong>Interrompa o Fluxo:</strong> Desligue a <a href="equipamentos.html">bomba de água</a> por alguns minutos.</li>
-                    <li><strong>Remoção das Plantas:</strong> Retire as plantas com cuidado para não danificar excessivamente as raízes saudáveis.</li>
-                    <li><strong>Lavagem da Mídia:</strong> Retire a argila expandida ou brita e lave-as em água corrente (preferencialmente sem cloro) para remover o lodo.</li>
-                    <li><strong>Replantio:</strong> Recoloque as mídias e as plantas, garantindo que as raízes fiquem bem assentadas para receber o fluxo de água.</li>
+                    <li><strong>Pausa no Fluxo:</strong> Desligue a <a href="equipamentos.html">bomba</a>.</li>
+                    <li><strong>Manejo de Plantas:</strong> Retire as hortaliças com cuidado para preservar as raízes saudáveis.</li>
+                    <li><strong>Lavagem da Mídia:</strong> Lave a argila expandida ou brita apenas com água do próprio sistema (sem cloro).</li>
+                    <li><strong>Reinstalação:</strong> Recoloque a mídia e replante, verificando a oxigenação.</li>
                 </ol>
             </div>
 
-            <!-- BLOCO DE CONVERSÃO AMAZON - Manejo de Plantas -->
             <section class="amazon-showcase">
-                <h4>Ferramentas para Manejo de Cultivo</h4>
-                <p>Facilite o replantio e a manutenção das suas camas:</p>
+                <h4>Ferramentas de Precisão para Cultivo</h4>
+                <p>Facilite o replantio e a poda das suas hortaliças orgânicas:</p>
                 <div class="product-grid">
+                    <!-- Produto 01: Kit Mini Ferramentas Atualizado -->
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/61vY+4P+Z4L._AC_SL1500_.jpg" alt="Kit Ferramentas Jardim">
-                        <p><b>Kit de Mini Ferramentas</b><br>Perfeito para manipular raízes em espaços pequenos.</p>
-                        <a href="https://amzn.to/3YpD5v7" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <img src="https://m.media-amazon.com/images/I/61vY+4P+Z4L._AC_SL1500_.jpg" alt="Kit Mini Ferramentas">
+                        <p><b>Kit Mini Ferramentas</b><br>Essencial para manipular raízes em camas densas.</p>
+                        <a href="https://amzn.to/3T7uLqM" class="btn-amazon" target="_blank">Ver na Amazon</a>
                     </div>
+                    <!-- Produto 02: Tesoura de Poda Precision -->
                     <div class="product-card">
                         <img src="https://m.media-amazon.com/images/I/619D-DqI1sL._AC_SL1000_.jpg" alt="Tesoura de Poda">
-                        <p><b>Tesoura de Poda Precision</b><br>Remova raízes mortas e folhas secas com facilidade.</p>
-                        <a href="https://amzn.to/3YpD5v7" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <p><b>Tesoura de Poda Precision</b><br>Corte limpo para raízes e folhas secas.</p>
+                        <a href="https://amzn.to/3IovU7O" class="btn-amazon" target="_blank">Ver na Amazon</a>
                     </div>
                 </div>
             </section>
 
-            <p>A limpeza periódica evita o apodrecimento radicular e garante que a água retorne ao <a href="tanque-de-peixes-sempre-limpo.html">tanque de peixes</a> sempre oxigenada e livre de toxinas. Lembre-se que um sistema limpo é o segredo de uma Aquaponia produtiva e livre de odores.</p>
+            <p>A limpeza periódica evita o apodrecimento radicular e garante que a água retorne ao tanque oxigenada. Um sistema limpo é o segredo de uma Aquaponia livre de odores e altamente produtiva.</p>
         </article>
 
         <div class="nav-footer">
             <p><strong>Ainda tem dúvidas sobre o funcionamento?</strong></p>
-            <a href="o-que-e-a-aquaponia.html" class="btn-next">Entenda o Conceito da Aquaponia →</a>
+            <a href="o-que-e-aquaponia.html" class="btn-next">Entenda o Conceito da Aquaponia →</a>
         </div>
     </div>
 
