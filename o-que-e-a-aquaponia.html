@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configurações de SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é a Aquaponia? Guia Completo para Iniciantes - Aquaponia Brasil</title>
+    <meta name="description" content="Entenda o que é aquaponia: o sistema sustentável que une criação de peixes e cultivo de hortaliças orgânicas. Aprenda sobre biologia, economia e tecnologia.">
+    <meta name="keywords" content="o que é aquaponia, sistema aquapônico, criar tilápia em casa, horta orgânica, lemna, lentilha d'água, bomba ocean tech, nano rings, sustentabilidade">
+    <meta name="author" content="Aquaponia Brasil">
+
+    <!-- Scripts de Rastreamento -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
     <script>
@@ -10,15 +19,11 @@
         gtag('config', 'G-JB0HG78W4F');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O que é Aquaponia? O Guia Definitivo - Aquaponia Brasil</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     
     <style>
-        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #333; --light-bg: #f4f4f4; }
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #333; --light-bg: #f4f4f4; --ml-yellow: #FFE600; --ml-blue: #2D3277; }
         body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--text); line-height: 1.8; background-color: var(--white); }
-        
         .container { padding: 40px 5%; max-width: 900px; margin: 0 auto; }
         
         header.page-title { text-align: center; padding: 60px 20px; background: var(--dark); color: white; margin-bottom: 40px; }
@@ -26,29 +31,29 @@
 
         .content { font-size: 18px; text-align: left; }
         .content p { margin-bottom: 25px; }
-        
-        .content a { color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--primary); transition: 0.2s; }
-        .content a:hover { background: #eff7e9; border-bottom-style: solid; }
+        .content h2 { font-family: 'Source Serif Pro', serif; color: var(--dark); border-bottom: 2px solid var(--primary); display: inline-block; margin-top: 40px; }
 
         .concept-box { background: #eef5eb; border-radius: 12px; padding: 30px; margin: 35px 0; border-left: 6px solid var(--primary); }
-        .concept-box h2 { margin-top: 0; color: var(--primary); font-family: 'Source Serif Pro', serif; }
+        .concept-box h2 { border: none; margin-top: 0; }
 
+        /* Card Mercado Livre Lemna */
+        .ml-offer-card { background: #f8f9fa; border: 2px solid var(--ml-yellow); border-radius: 15px; padding: 30px; margin: 40px 0; display: flex; flex-wrap: wrap; gap: 25px; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .ml-img { width: 180px; border-radius: 10px; }
+        .btn-ml { background: var(--ml-yellow); color: var(--ml-blue) !important; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 0 #D1BC00; transition: 0.2s; }
+
+        /* Vitrine Amazon */
         .amazon-showcase { background: var(--light-bg); border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid #ddd; text-align: center; }
-        .amazon-showcase h3 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 10px; }
-        .amazon-showcase p { font-size: 16px; color: #666; margin-bottom: 25px; }
-        
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .product-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid #eee; transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .product-card img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 15px; }
-        .product-card h4 { font-size: 16px; margin: 10px 0; height: 45px; overflow: hidden; }
-        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; margin-top: auto; border: none; font-size: 14px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 25px; }
+        .product-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid #eee; display: flex; flex-direction: column; align-items: center; transition: 0.3s; }
+        .product-card img { max-width: 140px; height: 140px; object-fit: contain; margin-bottom: 15px; }
+        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; font-size: 14px; margin-top: auto; }
 
+        /* Navegação */
+        .lead-banner { background: #eff7e9; border: 2px solid var(--primary); padding: 40px 20px; border-radius: 15px; margin: 60px 0; text-align: center; }
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
-        .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; border: none; transition: 0.3s; }
-        .btn-next:hover { background: #558a3f; transform: scale(1.02); }
+        .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; transition: 0.3s; border: none; }
 
-        @media (max-width: 600px) { .content { font-size: 16px; } }
+        @media (max-width: 600px) { .ml-offer-card { text-align: center; justify-content: center; } }
     </style>
 </head>
 <body>
@@ -56,63 +61,64 @@
     <div id="menu-placeholder"></div>
 
     <header class="page-title">
-        <h1>O que é Aquaponia?</h1>
+        <h1>O que é a Aquaponia?</h1>
     </header>
 
     <div class="container">
         <article class="content">
-            <p>A **Aquaponia** é um sistema de produção de alimentos que combina a aquicultura convencional (criação de peixes) com a hidroponia (cultivo de plantas em água) em um ambiente simbiótico.</p>
+            <p>A **Aquaponia** é uma replicação da natureza em pequena escala. É o sistema que une a criação de peixes com o cultivo de plantas em água, onde um ajuda o outro a crescer.</p>
             
             <div class="concept-box">
                 <h2>Como o Ciclo Funciona?</h2>
-                <p>Em um sistema comum, os dejetos dos peixes se acumulariam na água, tornando-a tóxica. Na aquaponia, essa água rica em nutrientes é levada até as raízes das plantas, que filtram a água (absorvendo os nutrientes) e a devolvem limpa para o tanque dos peixes.</p>
+                <p>Os peixes produzem nutrientes através dos dejetos. Bactérias invisíveis transformam isso em adubo orgânico de alta qualidade. As plantas filtram a água ao absorver esse adubo e a devolvem limpa para os peixes. É um ciclo infinito e sustentável.</p>
             </div>
 
-            <p>É uma **replicação da natureza** em pequena escala. Você economiza até 90% de água em comparação à agricultura tradicional e elimina a necessidade de fertilizantes químicos e agrotóxicos.</p>
+            <h2>Nutrição Orgânica e Economia</h2>
+            <p>Para o sistema ser lucrativo e sustentável, você deve focar em reduzir custos. A melhor forma é cultivando a <strong>Lemna (Lentilha d'água)</strong>, que serve de alimento vivo para as Tilápias e limpa o tanque.</p>
 
+            <!-- CONVERSÃO MERCADO LIVRE LEMNA -->
+            <section class="ml-offer-card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_787112-MLB76206014907_052024-F.webp" class="ml-img" alt="Mudas de Lemna">
+                <div class="ml-info">
+                    <h3>Comece sua Produção de Lemna</h3>
+                    <p>Adquirir mudas iniciais é o ponto de partida mais barato para economizar com ração industrial. Esta oferta de 250 mudas é a que recomendo para iniciantes.</p>
+                    <a href="https://meli.la/28NEPXW" target="_blank" class="btn-ml">VER NO MERCADO LIVRE →</a>
+                </div>
+            </section>
+
+            <h2>Tecnologia de Performance</h2>
+            <p>Para o sistema não falhar, você precisa de circulação constante e uma "casa" para suas bactérias. Equipamentos amadores causam perda de peixes; por isso, focamos em itens de performance.</p>
+
+            <!-- VITRINE AMAZON PERFORMANCE -->
             <section class="amazon-showcase">
-                <h3>Itens Essenciais para sua Primeira Montagem</h3>
-                <p>Para começar um pequeno sistema experimental, você precisará monitorar a água e circular o fluxo:</p>
-                
+                <h3>Equipamentos Recomendados</h3>
                 <div class="product-grid">
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Alcon Kit Teste">
-                        <h4>Alcon Kit Teste: Amônia, Nitrito e PH</h4>
-                        <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <img src="https://m.media-amazon.com/images/I/61uRVgftIqL._AC_SL1280_.jpg" alt="Bomba Ocean Tech">
+                        <p><b>Bomba Ocean Tech AC Pump</b><br>Eficiência e durabilidade para circulação 24h.</p>
+                        <a href="https://amzn.to/4tu4YFZ" class="btn-amazon" target="_blank">Ver na Amazon →</a>
                     </div>
-
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba Submersa PL-203">
-                        <h4>Bomba Submersa PL-203 (1000 L/H)</h4>
-                        <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <img src="https://m.media-amazon.com/images/I/614zeGaEaIL._AC_SL1199_.jpg" alt="Nano Rings">
+                        <p><b>Nano Rings High Energy</b><br>A melhor mídia biológica para manter sua água cristalina.</p>
+                        <a href="https://amzn.to/431iqX2" class="btn-amazon" target="_blank">Ver na Amazon →</a>
                     </div>
                 </div>
             </section>
 
-            <h2>Vantagens da Aquaponia</h2>
-            <ul>
-                <li><strong>Sustentabilidade:</strong> Uso mínimo de água e zero químicos.</li>
-                <li><strong>Produção em Casa:</strong> Pode ser feita em quintais, varandas ou garagens.</li>
-                <li><strong>Alimento Orgânico:</strong> Você sabe exatamente o que está comendo.</li>
-                <li><strong>Terapia:</strong> Cuidar dos peixes e das plantas é uma atividade relaxante.</li>
-            </ul>
-
-            <p>Agora que você entendeu o conceito, o próximo passo é aprender como estruturar o seu sistema. Se você quer saber quais tanques usar ou como montar sua filtragem, baixe nosso material técnico completo.</p>
-        </article>
-
-        <!-- ISCA DE FUNDO DE FUNIL: O PRÓXIMO PASSO LÓGICO -->
-        <div class="nav-footer">
-            <div style="background: #eff7e9; border: 2px solid var(--primary); padding: 40px 20px; border-radius: 15px; margin-bottom: 40px;">
+            <!-- BANNER ESTRATÉGICO DO EBOOK -->
+            <div class="lead-banner">
                 <h2 style="font-family: 'Source Serif Pro', serif; color: var(--dark); margin-top: 0;">Você já tem a teoria. Agora, precisa do mapa.</h2>
                 <p style="font-size: 18px; color: #444; max-width: 650px; margin: 0 auto 30px;">
-                    Para evitar erros caros com equipamentos errados ou perda de peixes por amônia, baixe o nosso <strong>Guia Mestre de 13 Capítulos</strong>. É o manual técnico que eu uso em minhas consultorias.
+                    Para não cometer erros caros e perder seus peixes, baixe o <strong>Guia Mestre de 13 Capítulos</strong>. É o manual técnico completo que eu uso em minhas consultorias.
                 </p>
-                <a href="guia_gratuito.html" class="btn-next" style="box-shadow: 0 10px 20px rgba(105, 168, 79, 0.3);">QUERO BAIXAR O GUIA GRÁTIS →</a>
-                <p style="font-size: 14px; color: #777; margin-top: 15px;">PDF Gratuito • Envio Imediato • 30 Páginas de Conteúdo</p>
+                <a href="guia_gratuito.html" class="btn-lead" style="box-shadow: 0 10px 20px rgba(105, 168, 79, 0.3);">BAIXAR GUIA GRÁTIS →</a>
             </div>
+        </article>
 
-            <p><strong>Ainda quer explorar mais o site?</strong></p>
-            <a href="passo-a-passo-aquaponia.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--primary);">Ver Passo a Passo de Montagem →</a>
+        <div class="nav-footer">
+            <p><strong>Deseja começar a montagem?</strong></p>
+            <a href="passo-a-passo-aquaponia.html" class="btn-next">Ver Passo a Passo de Montagem →</a>
         </div>
     </div>
 
