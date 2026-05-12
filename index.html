@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
@@ -14,144 +13,173 @@
     <meta charset="utf-8">
     <title>Aquaponia Brasil - Produza Alimentos Orgânicos em Casa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
 
     <style>
-        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #575550; --light: #f5f8fa; }
-        body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--text); line-height: 1.6; }
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #1a1a1a; --white: #ffffff; }
+        body { font-family: 'Raleway', sans-serif; margin: 0; color: #444; line-height: 1.6; background-color: #f8f9fa; }
 
-        /* Banner Largo com Efeito de Névoa */
-        .hero-container {
+        /* HERO REFORMULADO: Resolvendo o texto espremido */
+        .hero-section {
             position: relative;
-            width: 100%;
-            overflow: hidden;
-            background-color: var(--dark);
-        }
-
-        .hero-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            opacity: 0.5; /* Efeito de névoa/escurecimento */
-            filter: blur(1px); /* Suaviza levemente para dar profundidade */
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            min-height: 60vh; /* Altura mínima flexível */
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
-            color: white;
+            justify-content: center;
+            background: var(--dark);
+            overflow: hidden;
+            padding: 60px 20px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('Home_arquivos/logogrande.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7; /* Imagem mais clara conforme solicitado */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
             text-align: center;
-            padding: 20px;
+            color: white;
         }
 
-        .hero-overlay h1 { font-family: 'georgia', serif; font-size: clamp(24px, 4vw, 48px); margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); color: white; }
-        .hero-overlay p { font-size: clamp(14px, 2vw, 20px); max-width: 800px; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); }
+        .hero-content h1 { 
+            font-family: 'Source Serif Pro', serif; 
+            font-size: clamp(32px, 6vw, 56px); 
+            margin-bottom: 20px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
 
-        /* Mídia Hub */
-        .media-hub { 
-            display: grid; 
-            grid-template-columns: 1.2fr 1fr; 
-            gap: 30px; 
-            max-width: 1100px; 
-            margin: 40px auto; 
+        .hero-content p { 
+            font-size: clamp(18px, 2.5vw, 24px); 
+            margin-bottom: 35px; 
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            font-weight: 400;
+        }
+
+        /* BOTÃO CTA PRINCIPAL - FUNIL */
+        .btn-cta { 
+            background: var(--primary); 
+            color: white !important; 
+            padding: 20px 40px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 50px; 
+            font-size: 20px; 
+            display: inline-block;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+        }
+        .btn-cta:hover { transform: scale(1.05); background: #558a3f; }
+
+        /* GRID DE MÍDIA (Prova Social) */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: -40px auto 60px;
             padding: 0 20px;
-        }
-        
-        .video-box { 
-            background: white; 
-            border-radius: 12px; 
-            overflow: hidden; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-            border: 4px solid var(--primary);
-        }
-        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
-        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-
-        .instagram-box { 
-            background: white; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-            border: 1px solid #ddd;
+            position: relative;
+            z-index: 10;
         }
 
-        .container { padding: 40px 5%; max-width: 1100px; margin: 0 auto; text-align: center; }
-        
-        /* Amazon Showcase */
-        .amazon-showcase { background: var(--light); padding: 40px 5%; border-radius: 20px; border: 1px solid #ddd; margin: 30px 0; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 25px; }
-        .product-card { background: white; padding: 25px; border-radius: 15px; border-top: 5px solid var(--primary); display: flex; flex-direction: column; align-items: center; }
-        .product-card img { width: 120px; height: 120px; object-fit: contain; }
-        .btn-amazon { background: var(--accent); color: #222 !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: 15px; }
+        .media-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-bottom: 5px solid var(--primary);
+        }
 
-        .btn-cta { background: var(--primary); color: white !important; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; margin-top: 15px; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
-        @media (max-width: 850px) { .media-hub { grid-template-columns: 1fr; } }
+        /* VITRINE AMAZON */
+        .amazon-section { text-align: center; padding: 60px 5%; background: white; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; margin: 40px auto; }
+        .product-card { padding: 30px; border: 1px solid #eee; border-radius: 15px; transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
+        .product-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .product-card img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 20px; }
+        .btn-amazon { background: var(--accent); color: #222 !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: auto; }
+
+        @media (max-width: 768px) {
+            .hero-section { min-height: 50vh; padding-top: 40px; }
+            .media-grid { margin-top: 20px; }
+        }
     </style>
 </head>
 
 <body>
-
     <div id="menu-placeholder"></div>
 
-    <!-- SEÇÃO HERO COM BANNER LARGO ORIGINAL E NÉVOA -->
-    <header class="hero-container">
-        <img class="hero-image" src="Home_arquivos/logogrande.jpg" 
-             srcset="Home_arquivos/logogrande.jpg 630w, Home_arquivos/logogrande.jpg 1260w, Home_arquivos/logogrande.jpg 2520w" 
-             alt="Aquaponia Brasil">
-        <div class="hero-overlay">
-            <h1>Sua Fonte de Alimento em Casa</h1>
-            <p>Aprenda a unir a criação de peixes e o cultivo de plantas em um sistema sustentável.</p>
-            <a href="passo-a-passo-aquaponia.html" class="btn-cta">Ver Passo a Passo →</a>
+    <!-- HERO: MOTIVAÇÃO E AÇÃO -->
+    <header class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Alimento Orgânico e Terapia no seu Quintal</h1>
+            <p>Descubra como criar tilápias e cultivar hortaliças frescas com um sistema que economiza 90% de água.</p>
+            <a href="guia_gratuito.html" class="btn-cta">Baixar Manual Técnico Grátis →</a>
         </div>
     </header>
 
-    <div class="media-hub">
-        <!-- Player YouTube -->
-        <div class="video-box">
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/z1-fb3tpjbc?si=sFyT-RpSpxJxgIzw" title="YouTube video player" allowfullscreen></iframe>
+    <!-- PROVA SOCIAL: VÍDEO DO TANQUE + INSTAGRAM -->
+    <div class="media-grid">
+        <div class="media-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/z1-fb3tpjbc?si=sFyT-RpSpxJxgIzw" allowfullscreen></iframe>
             </div>
-            <div style="padding: 10px; text-align: center; font-weight: bold;">Vídeo: Como Iniciar seu Sistema</div>
+            <div style="padding: 20px; text-align: center;">
+                <h3 style="margin:0; color: var(--dark);">Veja o Tanque em Ação</h3>
+                <p style="font-size: 14px; margin: 10px 0 0;">Exemplo real de dimensionamento e fluxo.</p>
+            </div>
         </div>
-        
-        <!-- Instagram NATIVO -->
-        <div class="instagram-box">
+
+        <div class="media-card">
+            <!-- EMBED DO INSTAGRAM REAL -->
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CMJAUBzAbh6/" data-instgrm-version="14" style="background:#FFF; border:0; margin:0; width:100%;">
-                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CMJAUBzAbh6/" target="_blank">Instagram @aquaponiabrasil</a></div>
+                <div style="padding:16px;"><a href="https://www.instagram.com/p/CMJAUBzAbh6/" target="_blank">Ver no Instagram</a></div>
             </blockquote>
             <script async src="//www.instagram.com/embed.js"></script>
         </div>
     </div>
 
-    <div class="container">
-        <h2>Equipamentos Recomendados para 2026</h2>
-        <section class="amazon-showcase">
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba">
-                    <h4>Bomba Submersa 1000 L/H</h4>
-                    <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Teste">
-                    <h4>Kit Teste Master Alcon</h4>
-                    <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
-                </div>
-            </div>
-        </section>
+    <!-- CONVERSÃO AMAZON -->
+    <section class="amazon-section">
+        <h2>Monte seu Sistema com Peças Validadas</h2>
+        <p>Estes são os dois itens indispensáveis que eu pessoalmente recomendo para começar hoje:</p>
         
-        <div style="margin-top: 30px;">
-            <a href="os-filtros.html" style="color: var(--primary); font-weight: bold; margin: 0 10px;">Filtros</a> | 
-            <a href="o-tanque-de-peixes.html" style="color: var(--primary); font-weight: bold; margin: 0 10px;">Tanques</a> | 
-            <a href="lemna-ou-lentilha-dagua.html" style="color: var(--primary); font-weight: bold; margin: 0 10px;">Alimentação</a>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba">
+                <h4>Bomba Submersa PL-203 (1000 L/H)</h4>
+                <p>Silenciosa e econômica para oxigenação constante.</p>
+                <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
+                <h4>Kit de Teste Master Alcon</h4>
+                <p>Garanta a vida dos peixes monitorando Amônia e pH.</p>
+                <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINKS RÁPIDOS DA BIBLIOTECA -->
+    <div style="text-align: center; padding: 40px; background: #eee;">
+        <h3 style="font-family: serif;">Biblioteca Técnica Gratuita:</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
+            <a href="os-filtros.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Filtros</a>
+            <a href="o-tanque-de-peixes.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Tanques</a>
+            <a href="lemna-ou-lentilha-dagua.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Alimentação</a>
+            <a href="desnivel.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Engenharia de Fluxo</a>
         </div>
     </div>
 
