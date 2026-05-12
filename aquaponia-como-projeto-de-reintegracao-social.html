@@ -12,41 +12,37 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpeza das Camas de Cultivo: Guia Prático - Aquaponia Brasil</title>
+    <title>Aquaponia e Reintegração Social - Aquaponia Brasil</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     
     <style>
-        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #333; --light-bg: #f4f4f4; --danger: #d9534f; }
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #333; --light-bg: #f4f4f4; }
         body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--text); line-height: 1.8; background-color: var(--white); }
         
         .container { padding: 40px 5%; max-width: 900px; margin: 0 auto; }
         
         header.page-title { text-align: center; padding: 60px 20px; background: var(--dark); color: white; margin-bottom: 40px; }
-        header.page-title h1 { font-family: 'Source Serif Pro', serif; font-size: clamp(28px, 5vw, 42px); color: var(--primary); margin: 0; }
+        header.page-title h1 { font-family: 'Source Serif Pro', serif; font-size: clamp(24px, 5vw, 38px); color: var(--primary); margin: 0; }
 
         .content { font-size: 18px; text-align: left; }
         .content p { margin-bottom: 25px; }
         
-        /* Links Internos */
         .content a { color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--primary); transition: 0.2s; }
         .content a:hover { background: #eff7e9; border-bottom-style: solid; }
 
-        /* Blocos de Alerta e Passo a Passo */
-        .info-box { background: #eef5eb; border-radius: 12px; padding: 30px; margin: 30px 0; border: 1px solid var(--primary); }
-        .alert-box { background: #fff5f5; border-left: 5px solid var(--danger); padding: 25px; margin: 30px 0; border-radius: 0 10px 10px 0; }
-        .alert-box strong { color: var(--danger); }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 40px 0; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
-        .article-img { width: 100%; max-width: 650px; display: block; margin: 35px auto 10px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .img-caption { text-align: center; font-size: 15px; font-weight: 700; color: #666; margin-bottom: 40px; display: block; font-style: italic; }
+        .impact-box { background: #f8f9fa; border-left: 5px solid var(--primary); padding: 25px; margin: 30px 0; border-radius: 0 8px 8px 0; }
 
         /* Vitrine Amazon */
         .amazon-showcase { background: var(--light-bg); border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid #ddd; text-align: center; }
         .amazon-showcase h3 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 25px; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-        .product-card { background: white; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #eee; transition: 0.3s; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .product-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid #eee; transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .product-card img { max-width: 130px; height: auto; margin-bottom: 15px; }
-        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 14px; text-decoration: none; display: inline-block; }
+        .product-card img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 15px; }
+        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 14px; margin-top: auto; border: none; }
 
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
         .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; }
@@ -59,54 +55,62 @@
     <div id="menu-placeholder"></div>
 
     <header class="page-title">
-        <h1>Limpeza das Camas de Cultivo</h1>
+        <h1>Aquaponia como Projeto de Reintegração Social</h1>
     </header>
 
     <div class="container">
         <article class="content">
-            <p>Com o tempo, as <strong>camas de cultivo (growbeds)</strong> podem apresentar excesso de sujeira. Isso se deve ao acúmulo natural de detritos, como os dejetos dos peixes, restos de raízes, folhas, insetos, entre outros elementos orgânicos.</p>
-            
-            <p>De fato, essa é uma das funções vitais da cama de cultivo: <strong>reter essa sujeira</strong>. Garantir que a água retorne limpa para o <a href="o-tanque-de-peixes.html">tanque de peixes</a> é fundamental para o equilíbrio do sistema. Relembrando o ciclo da amônia, é através das raízes das plantas que os nitratos são absorvidos e transformados em biomassa vegetal.</p>
+            <p>A Aquaponia possui um potencial excepcional como ferramenta de transformação e reintegração social. Por unir biologia, paciência e o cuidado com a vida, ela oferece mais do que alimentos: oferece **propósito**.</p>
 
-            <div class="info-box">
-                <p><strong>O processo de limpeza é simples e essencial:</strong></p>
-                <p>Basta interromper o fluxo de água (você pode desligar a bomba por alguns minutos), retirar as plantas com cuidado para não danificar as raízes, colocar as mídias no chão e lavá-las (sejam pedras, cascalhos ou <strong>argila expandida</strong>) em água corrente.</p>
+            <div class="impact-box">
+                "O investimento é baixo, mas o retorno em dignidade humana é imensurável. Projetos isentos de pretensão comercial podem mudar a realidade de comunidades inteiras."
             </div>
 
-            <p>Feita a limpeza, é só recolocar as plantas, tomando o cuidado para que as raízes fiquem bem assentadas e protegidas pelas mídias filtrantes.</p>
+            <p>Um exemplo marcante é o trabalho desenvolvido em Itu pelo grupo <strong>Crescimento Limpo</strong>, que utiliza o sistema para capacitação e terapia:</p>
 
-            <!-- BLOCO DE CONVERSÃO AMAZON -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Qe1sFSlMZng" allowfullscreen></iframe>
+            </div>
+
+            <p>Além disso, unidades prisionais já adotam a Aquaponia como forma de sustentabilidade e ressocialização, permitindo que reeducandos aprendam uma profissão sustentável enquanto produzem hortaliças orgânicas. Cito o exemplo histórico do <a href="https://web.archive.org/web/20220121180532/http://www.sap.sp.gov.br/noticias/not816.html" target="_blank">CDP III de Pinheiros</a>.</p>
+
+            <!-- VITRINE DE CONVERSÃO - FOCO EM BAIXO CUSTO E ACESSIBILIDADE -->
             <section class="amazon-showcase">
-                <h3>Equipamentos para Manutenção e Reposição</h3>
+                <h3>Equipamentos para Projetos Acessíveis</h3>
+                <p>É possível iniciar sistemas de impacto social com baixo investimento:</p>
+                
                 <div class="product-grid">
+                    <!-- Produto 1: Bomba PL-203 -->
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/614zeGaEaIL._AC_SL1199_.jpg" alt="Mídia Cerâmica">
-                        <p><b>Mídias Nano Rings</b><br>Alta porosidade biológica.</p>
-                        <a href="https://amzn.to/431iqX2" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba Submersa PL-203">
+                        <h4>Bomba Submersa PL-203 (1000 L/H)</h4>
+                        <p>Baixo consumo de energia, ideal para sistemas didáticos e sociais.</p>
+                        <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
                     </div>
+
+                    <!-- Produto 2: Kit Alcon -->
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/61uRVgftIqL._AC_SL1280_.jpg" alt="Bomba Ocean Tech">
-                        <p><b>Bomba Ocean Tech</b><br>Retorno de água eficiente.</p>
-                        <a href="https://amzn.to/4tu4YFZ" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
+                        <h4>Kit de Testes Master Alcon</h4>
+                        <p>O monitoramento essencial para garantir que o projeto floresça sem perdas.</p>
+                        <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
                     </div>
                 </div>
             </section>
 
-            <div class="alert-box">
-                <p><strong>AVISO CRÍTICO:</strong> Se você possui mais de uma cama de cultivo, <strong>não faça a limpeza de todas ao mesmo tempo</strong>.</p>
-                <p>As bactérias benéficas criam suas colônias justamente nas superfícies porosas (pedras, argila, tijolos). Se você eliminar todas as colônias de uma vez, o sistema perderá sua capacidade de processar a amônia imediatamente.</p>
-            </div>
+            <h2>Os Benefícios da Jornada</h2>
+            <ul>
+                <li><strong>Pertencimento:</strong> Traz as pessoas de volta ao convívio social produtivo.</li>
+                <li><strong>Autossuficiência:</strong> Gera alimentos saudáveis que podem ser consumidos ou vendidos.</li>
+                <li><strong>Autoestima:</strong> Ver os resultados visíveis de plantas crescendo e peixes saudáveis encanta e motiva qualquer pessoa.</li>
+            </ul>
 
-            <p>Caso você não tenha um <a href="os-filtros.html">filtro biológico</a> auxiliar e dependa exclusivamente das camas para a nitrificação, essa regra é absoluta. O prazo ideal para alternar a limpeza entre as camas de cultivo é respeitar o tempo da biologia se reestabelecer: **em torno de 30 a 45 dias** (o tempo médio de uma <a href="o-tanque-de-peixes.html">ciclagem</a>).</p>
-            
-            <p>Lembre-se que manter o <a href="tanque-de-peixes-sempre-limpo.html">tanque de peixes sempre limpo</a> e os <a href="os-filtros.html">filtros</a> em dia reduz a frequência necessária para essa limpeza profunda nas growbeds.</p>
-
-            <p>Todo esse manejo faz parte da <a href="aquaponia-repllicacao-da-natureza.html">replicação da natureza</a> que buscamos em nossos sistemas caseiros.</p>
+            <p>Se você deseja implantar um projeto social, lembre-se que o segredo não está na sofisticação do material, mas na dedicação de quem cuida do ciclo.</p>
         </article>
 
         <div class="nav-footer">
-            <p><strong>Parabéns! Você concluiu os fundamentos do manejo.</strong></p>
-            <a href="index.html" class="btn-next">Voltar para a Página Inicial →</a>
+            <p><strong>Quer entender o passo a passo técnico para começar?</strong></p>
+            <a href="passo-a-passo-aquaponia.html" class="btn-next">Guia Passo a Passo →</a>
         </div>
     </div>
 
