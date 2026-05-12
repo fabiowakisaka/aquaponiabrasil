@@ -2,137 +2,148 @@
 <html lang="pt-br">
 
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-JB0HG78W4F');
-  </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8996333447529356" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0HG78W4F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JB0HG78W4F');
+    </script>
 
-  <meta charset="utf-8">
-  <title>Aquaponia Brasil - Produza Alimentos Orgânicos em Casa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="Home_arquivos/main.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Aquaponia Brasil - Produza Alimentos Orgânicos em Casa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root { --primary: #69A84F; --accent: #FF9900; --dark: #575550; --light: #f5f8fa; }
-    body { font-family: 'Raleway', sans-serif; color: var(--dark); line-height: 1.6; }
-    h1, h2, h3 { font-family: 'Source Serif Pro', serif; color: var(--dark); }
+    <style>
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #575550; --light: #f5f8fa; }
+        body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--text); line-height: 1.6; }
+        
+        /* Hero Section com Imagem e Opacidade */
+        .hero-banner { 
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('Home_arquivos/feature-three_002.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+            padding: 100px 5% 60px; 
+            text-align: center; 
+        }
+        .hero-banner h1 { font-family: 'Source Serif Pro', serif; font-size: clamp(32px, 6vw, 54px); margin: 0; color: white; }
+        .hero-banner p { font-size: 20px; max-width: 800px; margin: 20px auto; opacity: 0.95; }
 
-    /* Layout de Destaque (Vídeo + Texto) */
-    .hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 60px 5%; max-width: 1100px; margin: 0 auto; align-items: center; }
-    
-    .video-frame { position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.2); margin: 0 auto; border: 4px solid var(--primary); }
-    .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        /* Container de Vídeos Lado a Lado */
+        .video-hub { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 20px; 
+            max-width: 1000px; 
+            margin: -40px auto 60px; 
+            padding: 0 20px;
+        }
+        .video-card { 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+            border: 3px solid var(--primary);
+            aspect-ratio: 9 / 16;
+            position: relative;
+        }
+        .video-card iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
-    .intro-text h1 { font-size: 42px; margin-bottom: 20px; color: var(--primary); }
-    
-    /* Box de Redes Sociais */
-    .social-proof-box { background: var(--light); padding: 25px; border-radius: 12px; margin-top: 30px; border-left: 5px solid var(--accent); }
-    .social-link { display: flex; align-items: center; gap: 10px; color: var(--dark); text-decoration: none; font-weight: bold; margin: 12px 0; transition: 0.3s; }
-    .social-link:hover { color: var(--primary); transform: translateX(5px); }
+        .container { padding: 40px 5%; max-width: 1100px; margin: 0 auto; text-align: center; }
+        
+        /* Vitrine Amazon Estratégica (Foco em 2 links) */
+        .amazon-showcase { background: var(--light); padding: 50px 5%; border-radius: 20px; margin: 40px 0; border: 1px solid #ddd; }
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            margin-top: 30px;
+            justify-content: center;
+        }
+        .product-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; border-bottom: 4px solid var(--accent); }
+        .product-card img { width: 140px; height: 140px; object-fit: contain; margin-bottom: 20px; }
+        .product-card h4 { margin: 10px 0; color: var(--dark); font-size: 18px; }
+        .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 14px; margin-top: auto; }
 
-    /* Vitrine Amazon Estilizada (Dica do Claude) */
-    .amazon-section { background: #fff; padding: 60px 5%; border-top: 1px solid #eee; }
-    .amazon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1100px; margin: 40px auto 0; }
-    .product-card { border: 1px solid #eee; border-radius: 15px; padding: 20px; text-align: center; transition: 0.3s; display: flex; flex-direction: column; }
-    .product-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); transform: translateY(-5px); }
-    .product-card img { width: 150px; height: 150px; object-fit: contain; margin: 0 auto 15px; }
-    .product-card h4 { font-size: 16px; height: 45px; overflow: hidden; margin-bottom: 10px; }
-    .product-card p { font-size: 14px; color: #777; margin-bottom: 20px; flex-grow: 1; }
-    .btn-amazon { background: var(--accent); color: white !important; text-decoration: none !important; padding: 12px; border-radius: 5px; font-weight: bold; font-size: 14px; }
+        .btn-main { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; margin: 20px 0; }
 
-    /* Responsividade */
-    @media (max-width: 850px) { .hero-container { grid-template-columns: 1fr; text-align: center; } .intro-text h1 { font-size: 32px; } }
-  </style>
+        @media (max-width: 768px) { .video-hub { grid-template-columns: 1fr; max-width: 400px; } }
+    </style>
 </head>
 
 <body>
 
-  <div id="menu-placeholder"></div>
+    <div id="menu-placeholder"></div>
 
-  <main>
-    <!-- SEÇÃO 1: VÍDEO + BOAS VINDAS (Fidelização e Retenção) -->
-    <section class="hero-container">
-      <div class="video-frame">
-        <!-- Seu vídeo famoso (Shorts) -->
-        <iframe src="https://www.youtube.com/embed/nkYDTghOFXw" title="Bem vindos ao Aquaponia Brasil" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+    <!-- 1. HERO COM IMAGEM ORIGINAL E OPACIDADE -->
+    <section class="hero-banner">
+        <h1>Produza Alimentos Orgânicos no seu Quintal</h1>
+        <p>A Aquaponia Brasil simplifica a tecnologia que une a criação de peixes ao cultivo de plantas. Saúde, terapia e sustentabilidade em um só lugar.</p>
+        <a href="passo-a-passo-aquaponia.html" class="btn-main">Começar Agora →</a>
+    </section>
 
-      <div class="intro-text">
-        <h1>Aquaponia Brasil</h1>
-        <p><b>Cansado do estresse do dia a dia?</b> Imagine colher alimentos orgânicos no quintal da sua casa, criando peixes e plantas em um sistema terapêutico e sustentável.</p>
-        <p>Eu sou o <b>Fábio</b>, e meu objetivo é simplificar a aquaponia para que você possa começar o seu sistema com baixo custo e alta produtividade.</p>
+    <!-- 2. HUB DE VÍDEOS: YOUTUBE E INSTAGRAM LADO A LADO -->
+    <div class="video-hub">
+        <!-- Player do YouTube Shorts -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/nkYDTghOFXw" title="YouTube Shorts" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         
-        <div class="social-proof-box">
-          <strong>Acompanhe nossa jornada real:</strong>
-          <a href="https://www.instagram.com/aquaponiabrasil/" class="social-link" target="_blank">📸 @aquaponiabrasil no Instagram</a>
-          <a href="https://www.youtube.com/@aquaponiabrasil8450" class="social-link" target="_blank">🎥 Aquaponia Brasil no YouTube</a>
+        <!-- Player do Instagram -->
+        <div class="video-card">
+            <iframe src="https://www.instagram.com/reels/videos/nkYDTghOFXw/embed" allowtransparency="true" allowfullscreen="true" frameborder="0"></iframe>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <!-- SEÇÃO 2: MONETIZAÇÃO (Links Amazon de Hoje) -->
-    <section class="amazon-section">
-      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <h2>Equipamentos que eu recomendo</h2>
-        <p>Para evitar que seus peixes morram e seu sistema pare, estes são os itens básicos que eu validei e uso:</p>
-      </div>
+    <div class="container">
+        <h2>Domine o Ecossistema</h2>
+        <p>Aprenda como equilibrar a biologia do seu tanque para colher hortaliças livres de agrotóxicos.</p>
 
-      <div class="amazon-grid">
-        <!-- Produto 1: Kit Alcon -->
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
-          <h4>Kit de Testes Alcon (PH, Amônia, Nitrito)</h4>
-          <p>O "seguro de vida" dos seus peixes. Monitore a água para evitar perdas fatais.</p>
-          <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
+        <!-- 3. VITRINE DE CONVERSÃO: 2 PRODUTOS ASSERTIVOS -->
+        <section class="amazon-showcase">
+            <h3>Kit de Início Recomendado</h3>
+            <p>Os dois itens indispensáveis que eu validei hoje para o seu projeto:</p>
+            <div class="product-grid">
+                <!-- Produto 1: Bomba PL-203 (O Pulmão) -->
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba PL-203">
+                    <h4>Bomba Submersa 1000 L/H</h4>
+                    <p>Silenciosa e eficiente para circular o nutriente até as suas plantas.</p>
+                    <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                </div>
+
+                <!-- Produto 2: Kit Alcon (O Seguro) -->
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
+                    <h4>Kit de Testes Master Alcon</h4>
+                    <p>Monitore Amônia e pH. Não coloque seus peixes em risco.</p>
+                    <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                </div>
+            </div>
+        </section>
+
+        <div style="margin-top: 40px;">
+            <p><strong>Acesse nossos guias técnicos:</strong></p>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <a href="os-filtros.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 5px;">Filtragem</a>
+                <a href="o-tanque-de-peixes.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 5px;">Tanques</a>
+                <a href="lemna-ou-lentilha-dagua.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 5px;">Super Alimentos</a>
+            </div>
         </div>
+    </div>
 
-        <!-- Produto 2: Bomba 1000 -->
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba PL-203">
-          <h4>Bomba Submersa PL-203 (1000 L/H)</h4>
-          <p>O coração do sistema. Silenciosa, econômica e ideal para pequenos tanques.</p>
-          <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
-        </div>
+    <div id="footer-placeholder"></div>
 
-        <!-- Produto 3: Termômetro -->
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/61kRnF39LmL._SL1200_.jpg" alt="Termômetro HTC-2">
-          <h4>Termômetro Digital HTC-2 com Sonda</h4>
-          <p>Monitore a temperatura da água e a umidade da estufa simultaneamente.</p>
-          <a href="https://amzn.to/4u4ZhPQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEÇÃO 3: JORNADA DE CONHECIMENTO -->
-    <section style="padding: 60px 5%; background: var(--light);">
-      <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <h2>Aprenda a Montar seu Sistema</h2>
-        <p>Escolha uma trilha técnica e comece hoje mesmo:</p>
-        <br>
-        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-            <a href="passo-a-passo-aquaponia.html" class="button" style="padding: 15px 30px; text-decoration: none;">Guia Passo a Passo</a>
-            <a href="os-filtros.html" class="button" style="padding: 15px 30px; text-decoration: none;">Engenharia de Filtros</a>
-            <a href="o-tanque-de-peixes.html" class="button" style="padding: 15px 30px; text-decoration: none;">Tanque de Peixes</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div id="footer-placeholder"></div>
-
-  <script>
-    function loadComponent(id, file) {
-      fetch(file).then(r => r.text()).then(d => document.getElementById(id).innerHTML = d);
-    }
-    loadComponent('menu-placeholder', 'menu.html');
-    loadComponent('footer-placeholder', 'footer.html');
-  </script>
-
+    <script>
+        function loadComponent(id, file) {
+            fetch(file).then(r => r.text()).then(d => document.getElementById(id).innerHTML = d);
+        }
+        loadComponent('menu-placeholder', 'menu.html');
+        loadComponent('footer-placeholder', 'footer.html');
+    </script>
 </body>
+
 </html>
