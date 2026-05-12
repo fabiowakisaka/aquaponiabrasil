@@ -19,10 +19,9 @@
         :root { --primary: #69A84F; --accent: #FF9900; --dark: #1a1a1a; --white: #ffffff; }
         body { font-family: 'Raleway', sans-serif; margin: 0; color: #444; line-height: 1.6; background-color: #f8f9fa; }
 
-        /* HERO REFORMULADO: Resolvendo o texto espremido */
         .hero-section {
             position: relative;
-            min-height: 60vh; /* Altura mínima flexível */
+            min-height: 65vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -37,7 +36,7 @@
             background-image: url('Home_arquivos/logogrande.jpg');
             background-size: cover;
             background-position: center;
-            opacity: 0.7; /* Imagem mais clara conforme solicitado */
+            opacity: 0.75; /* Brilho ajustado para clareza do logo */
             z-index: 1;
         }
 
@@ -53,39 +52,38 @@
             font-family: 'Source Serif Pro', serif; 
             font-size: clamp(32px, 6vw, 56px); 
             margin-bottom: 20px;
-            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            text-shadow: 0 4px 12px rgba(0,0,0,0.6);
         }
 
         .hero-content p { 
             font-size: clamp(18px, 2.5vw, 24px); 
             margin-bottom: 35px; 
-            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
             font-weight: 400;
         }
 
-        /* BOTÃO CTA PRINCIPAL - FUNIL */
         .btn-cta { 
             background: var(--primary); 
             color: white !important; 
-            padding: 20px 40px; 
+            padding: 22px 45px; 
             text-decoration: none; 
             font-weight: bold; 
             border-radius: 50px; 
             font-size: 20px; 
             display: inline-block;
             transition: 0.3s;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        .btn-cta:hover { transform: scale(1.05); background: #558a3f; }
+        .btn-cta:hover { transform: translateY(-3px); background: #558a3f; box-shadow: 0 15px 30px rgba(0,0,0,0.4); }
 
-        /* GRID DE MÍDIA (Prova Social) */
         .media-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             max-width: 1100px;
-            margin: -40px auto 60px;
+            margin: -60px auto 60px;
             padding: 0 20px;
             position: relative;
             z-index: 10;
@@ -94,24 +92,23 @@
         .media-card {
             background: white;
             border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
             overflow: hidden;
-            border-bottom: 5px solid var(--primary);
+            border-bottom: 6px solid var(--primary);
         }
 
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
-        /* VITRINE AMAZON */
-        .amazon-section { text-align: center; padding: 60px 5%; background: white; }
+        .amazon-section { text-align: center; padding: 80px 5%; background: white; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; margin: 40px auto; }
-        .product-card { padding: 30px; border: 1px solid #eee; border-radius: 15px; transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
-        .product-card:hover { border-color: var(--primary); transform: translateY(-5px); }
-        .product-card img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 20px; }
+        .product-card { padding: 30px; border: 1px solid #f0f0f0; border-radius: 15px; transition: 0.3s; display: flex; flex-direction: column; align-items: center; background: #fff; }
+        .product-card:hover { border-color: var(--primary); transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .product-card img { width: 140px; height: 140px; object-fit: contain; margin-bottom: 20px; }
         .btn-amazon { background: var(--accent); color: #222 !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: auto; }
 
         @media (max-width: 768px) {
-            .hero-section { min-height: 50vh; padding-top: 40px; }
+            .hero-section { min-height: 55vh; padding-top: 50px; }
             .media-grid { margin-top: 20px; }
         }
     </style>
@@ -120,30 +117,30 @@
 <body>
     <div id="menu-placeholder"></div>
 
-    <!-- HERO: MOTIVAÇÃO E AÇÃO -->
+    <!-- HERO: FOCO NA DESCOBERTA E CURIOSIDADE -->
     <header class="hero-section">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1>Alimento Orgânico e Terapia no seu Quintal</h1>
-            <p>Descubra como criar tilápias e cultivar hortaliças frescas com um sistema que economiza 90% de água.</p>
-            <a href="guia_gratuito.html" class="btn-cta">Baixar Manual Técnico Grátis →</a>
+            <h1>Sua Fonte de Alimento em Casa</h1>
+            <p>Descubra como a união entre peixes e plantas cria um ecossistema produtivo, sustentável e terapêutico no seu quintal.</p>
+            <!-- MUDANÇA ESTRATÉGICA: BOTÃO PARA O PASSO A PASSO -->
+            <a href="passo-a-passo-aquaponia.html" class="btn-cta">Entenda Como Funciona →</a>
         </div>
     </header>
 
-    <!-- PROVA SOCIAL: VÍDEO DO TANQUE + INSTAGRAM -->
+    <!-- PROVA SOCIAL E VALIDAÇÃO VISUAL -->
     <div class="media-grid">
         <div class="media-card">
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/z1-fb3tpjbc?si=sFyT-RpSpxJxgIzw" allowfullscreen></iframe>
             </div>
-            <div style="padding: 20px; text-align: center;">
-                <h3 style="margin:0; color: var(--dark);">Veja o Tanque em Ação</h3>
-                <p style="font-size: 14px; margin: 10px 0 0;">Exemplo real de dimensionamento e fluxo.</p>
+            <div style="padding: 25px; text-align: center;">
+                <h3 style="margin:0; color: var(--dark);">O Ecossistema em Movimento</h3>
+                <p style="font-size: 15px; margin: 12px 0 0; color: #666;">Veja na prática como a água circula e nutre todo o sistema.</p>
             </div>
         </div>
 
         <div class="media-card">
-            <!-- EMBED DO INSTAGRAM REAL -->
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CMJAUBzAbh6/" data-instgrm-version="14" style="background:#FFF; border:0; margin:0; width:100%;">
                 <div style="padding:16px;"><a href="https://www.instagram.com/p/CMJAUBzAbh6/" target="_blank">Ver no Instagram</a></div>
             </blockquote>
@@ -151,35 +148,35 @@
         </div>
     </div>
 
-    <!-- CONVERSÃO AMAZON -->
+    <!-- CONVERSÃO AMAZON (ITENS ESSENCIAIS) -->
     <section class="amazon-section">
-        <h2>Monte seu Sistema com Peças Validadas</h2>
-        <p>Estes são os dois itens indispensáveis que eu pessoalmente recomendo para começar hoje:</p>
+        <h2>Equipamentos Validados para o seu Início</h2>
+        <p>Abaixo, os dois pilares técnicos que eu pessoalmente utilizo e recomendo para segurança do seu sistema:</p>
         
         <div class="product-grid">
             <div class="product-card">
                 <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba">
-                <h4>Bomba Submersa PL-203 (1000 L/H)</h4>
-                <p>Silenciosa e econômica para oxigenação constante.</p>
+                <h4>Bomba Submersa 1000 L/H</h4>
+                <p>O coração do fluxo: oxigenação constante com baixo consumo de energia.</p>
                 <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
             </div>
             <div class="product-card">
                 <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
                 <h4>Kit de Teste Master Alcon</h4>
-                <p>Garanta a vida dos peixes monitorando Amônia e pH.</p>
+                <p>Sua ferramenta de diagnóstico: monitore os parâmetros da água com precisão.</p>
                 <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
             </div>
         </div>
     </section>
 
-    <!-- LINKS RÁPIDOS DA BIBLIOTECA -->
-    <div style="text-align: center; padding: 40px; background: #eee;">
-        <h3 style="font-family: serif;">Biblioteca Técnica Gratuita:</h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
-            <a href="os-filtros.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Filtros</a>
-            <a href="o-tanque-de-peixes.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Tanques</a>
-            <a href="lemna-ou-lentilha-dagua.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Alimentação</a>
-            <a href="desnivel.html" style="color: var(--primary); font-weight: bold; text-decoration: none;">Engenharia de Fluxo</a>
+    <!-- BIBLIOTECA DE APOIO -->
+    <div style="text-align: center; padding: 60px 20px; background: #f0f0f0;">
+        <h3 style="font-family: 'Source Serif Pro', serif; font-size: 24px; margin-bottom: 30px;">Explore Nosso Guia Técnico:</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <a href="os-filtros.html" style="color: var(--primary); font-weight: bold; text-decoration: none; padding: 10px 20px; border: 2px solid var(--primary); border-radius: 5px;">Sistemas de Filtragem</a>
+            <a href="o-tanque-de-peixes.html" style="color: var(--primary); font-weight: bold; text-decoration: none; padding: 10px 20px; border: 2px solid var(--primary); border-radius: 5px;">Dimensionamento de Tanques</a>
+            <a href="lemna-ou-lentilha-dagua.html" style="color: var(--primary); font-weight: bold; text-decoration: none; padding: 10px 20px; border: 2px solid var(--primary); border-radius: 5px;">Alimentação Natural</a>
+            <a href="desnivel.html" style="color: var(--primary); font-weight: bold; text-decoration: none; padding: 10px 20px; border: 2px solid var(--primary); border-radius: 5px;">Cálculos de Fluxo</a>
         </div>
     </div>
 
