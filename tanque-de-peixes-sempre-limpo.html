@@ -30,27 +30,30 @@
         .content a { color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--primary); transition: 0.2s; }
         .content a:hover { background: #eff7e9; border-bottom-style: solid; }
 
-        /* Boxes de Engenharia e Alerta */
         .tech-box { background: #eef5eb; border-radius: 12px; padding: 30px; margin: 35px 0; border: 1px solid var(--primary); }
         .tech-box h2 { margin-top: 0; color: var(--primary); font-family: 'Source Serif Pro', serif; }
         
         .warning-box { background: #fff5f5; border-left: 5px solid var(--danger); padding: 25px; margin: 30px 0; border-radius: 0 10px 10px 0; }
         .warning-box strong { color: var(--danger); }
 
+        /* Banner de Captura do eBook */
+        .lead-banner { background: #eff7e9; border: 2px solid var(--primary); padding: 40px 20px; border-radius: 15px; margin: 50px 0; text-align: center; }
+        .btn-lead { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; transition: 0.3s; border: none; }
+        .btn-lead:hover { background: #558a3f; transform: scale(1.02); }
+
         .article-img { width: 100%; max-width: 600px; display: block; margin: 35px auto 10px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         .img-caption { text-align: center; font-size: 15px; color: #666; margin-bottom: 40px; display: block; font-style: italic; }
 
-        /* Vitrine Amazon */
         .amazon-showcase { background: var(--light-bg); border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid #ddd; text-align: center; }
         .amazon-showcase h3 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 25px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
         .product-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid #eee; transition: 0.3s; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .product-card img { max-width: 140px; height: auto; margin-bottom: 15px; }
+        .product-card img { max-width: 130px; height: 140px; object-fit: contain; margin-bottom: 15px; }
         .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 20px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 14px; border: none; }
 
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
-        .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; border: none; }
+        .btn-next { color: var(--primary); font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--primary); font-size: 18px; }
 
         @media (max-width: 600px) { .content { font-size: 16px; } }
     </style>
@@ -75,44 +78,51 @@
             <img src="Home_arquivos/tanquelimpo1.jpg" alt="Esquema de saída de água superior" class="article-img">
             <span class="img-caption">Segurança máxima: saída de água posicionada na parte superior do tanque.</span>
 
-            <h3>Por que evitar furos no fundo?</h3>
-            <p>Muitos iniciantes cometem o erro de furar a base da caixa d'água para drenagem. Isso é extremamente arriscado devido à pressão da água e possíveis falhas em flanges ou vedações.</p>
-
             <div class="warning-box">
-                <p><strong>RISCO TÉCNICO:</strong> Um vazamento em uma flange inferior pode drenar todo o reservatório em poucos minutos, resultando na perda total dos seus peixes. Com o Overflow, o dreno acontece por cima, mantendo o nível de segurança constante.</p>
+                <p><strong>RISCO TÉCNICO:</strong> Muitos iniciantes furam a base da caixa d'água. Isso é perigoso. Um vazamento em uma flange inferior pode drenar todo o sistema em minutos. Com o Overflow, o dreno acontece por cima, mantendo um nível de segurança constante para suas Tilápias.</p>
+            </div>
+
+            <!-- BANNER ESTRATÉGICO DO EBOOK -->
+            <div class="lead-banner">
+                <h2 style="font-family: 'Source Serif Pro', serif; color: var(--dark); margin-top: 0;">Não monte seu sistema no "achismo"</h2>
+                <p style="font-size: 18px; color: #444; max-width: 650px; margin: 0 auto 30px;">
+                    Erros na hidráulica são a maior causa de desistência na aquaponia. Baixe meu <strong>Guia Mestre de 13 Capítulos</strong> com todos os esquemas de montagem e segurança que eu validei.
+                </p>
+                <a href="guia_gratuito.html" class="btn-lead" style="box-shadow: 0 10px 20px rgba(105, 168, 79, 0.3);">BAIXAR GUIA TÉCNICO GRÁTIS →</a>
+                <p style="font-size: 14px; color: #777; margin-top: 15px;">PDF Gratuito • 30 Páginas • Manual de Execução</p>
             </div>
 
             <img src="Home_arquivos/tanquelimpo2.jpg" alt="Funcionamento do Overflow" class="article-img">
             <span class="img-caption">Mecânica do dreno: a água é "sugada" do fundo em direção ao transbordo.</span>
 
             <section class="amazon-showcase">
-                <h3>Itens para um Tanque Cristalino</h3>
-                <p>Equipamentos que auxiliam na montagem do seu overflow e na limpeza diária:</p>
+                <h3>Equipamentos para Manutenção de Performance</h3>
+                <p>Estes são os itens que facilitam a limpeza técnica do seu tanque:</p>
                 <div class="product-grid">
+                    <!-- Produto 01: Sifão Atualizado -->
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/71u9SOfpAOL._AC_SL1500_.jpg" alt="Sifão de Limpeza">
-                        <p><b>Sifão Manual para Tanques</b><br>Remova resíduos persistentes do fundo.</p>
-                        <a href="https://amzn.to/3YpD5v7" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <img src="https://m.media-amazon.com/images/I/51p4oYI9-yL._AC_SL1000_.jpg" alt="Sifão Automático">
+                        <p><b>Sifão Automático 1.5m</b><br>Limpeza profunda do fundo sem esforço.</p>
+                        <a href="https://amzn.to/3T6oR8z" class="btn-amazon" target="_blank">Ver na Amazon</a>
                     </div>
+                    <!-- Produto 02: Kit Alcon Master -->
                     <div class="product-card">
-                        <img src="https://m.media-amazon.com/images/I/61S6h0S4S7L._AC_SL1000_.jpg" alt="Kit de Testes">
-                        <p><b>Kit de Testes Master</b><br>Verifique se a amônia está controlada.</p>
-                        <a href="https://amzn.to/3YpD5v7" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                        <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit de Testes Master">
+                        <p><b>Kit Alcon Master</b><br>O monitoramento essencial da amônia.</p>
+                        <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
                     </div>
                 </div>
             </section>
 
             <h3>Dicas de Engenharia para o Overflow:</h3>
             <ul>
-                <li><strong>Dentes de Sucção:</strong> O cano que encosta no fundo deve ter "dentes" ou janelas para permitir a passagem dos dejetos sem obstruir o fluxo.</li>
-                <li><strong>Furo de Respiro:</strong> Sempre faça um pequeno furo na curva superior do overflow para evitar o efeito de sifão contínuo, o que poderia esvaziar o tanque além do desejado.</li>
-                <li><strong>Manutenção:</strong> Mesmo com um bom overflow, realize uma <a href="tpa-troca-periodica-da-agua.html">TPA</a> mensal para remover o muco epitelial e proteínas dissolvidas.</li>
+                <li><strong>Dentes de Sucção:</strong> O cano interno deve ter aberturas no fundo para permitir a passagem dos dejetos.</li>
+                <li><strong>Furo de Respiro:</strong> Sempre faça um pequeno furo na curva superior do overflow para evitar o efeito sifão que esvaziaria o tanque.</li>
+                <li><strong>Manutenção:</strong> Mesmo com overflow, realize uma <a href="tpa-aquaponia.html">TPA</a> mensal para renovar a biologia da água.</li>
             </ul>
 
             <img src="Home_arquivos/tanquelimpo3.jpg" alt="Furo de segurança no overflow" class="article-img">
             <span class="img-caption">O detalhe técnico que evita acidentes e garante a oxigenação.</span>
-
-            <p>Dominar a circulação de água é o primeiro passo para uma <a href="aquaponia-repllicacao-da-natureza.html">replicação da natureza</a> de sucesso. Se os seus peixes estão saudáveis, as suas plantas terão o melhor adubo orgânico possível.</p>
         </article>
 
         <div class="nav-footer">
