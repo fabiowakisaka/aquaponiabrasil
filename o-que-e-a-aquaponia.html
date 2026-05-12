@@ -30,11 +30,9 @@
         .content a { color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px dashed var(--primary); transition: 0.2s; }
         .content a:hover { background: #eff7e9; border-bottom-style: solid; }
 
-        /* Box de Destaque para Conceitos */
         .concept-box { background: #eef5eb; border-radius: 12px; padding: 30px; margin: 35px 0; border-left: 6px solid var(--primary); }
         .concept-box h2 { margin-top: 0; color: var(--primary); font-family: 'Source Serif Pro', serif; }
 
-        /* Vitrine Amazon Estilizada */
         .amazon-showcase { background: var(--light-bg); border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid #ddd; text-align: center; }
         .amazon-showcase h3 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 10px; }
         .amazon-showcase p { font-size: 16px; color: #666; margin-bottom: 25px; }
@@ -47,7 +45,8 @@
         .btn-amazon { background: var(--accent); color: var(--dark) !important; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block; margin-top: auto; border: none; font-size: 14px; }
 
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
-        .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; border: none; }
+        .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; border: none; transition: 0.3s; }
+        .btn-next:hover { background: #558a3f; transform: scale(1.02); }
 
         @media (max-width: 600px) { .content { font-size: 16px; } }
     </style>
@@ -71,20 +70,17 @@
 
             <p>É uma **replicação da natureza** em pequena escala. Você economiza até 90% de água em comparação à agricultura tradicional e elimina a necessidade de fertilizantes químicos e agrotóxicos.</p>
 
-            <!-- VITRINE DE CONVERSÃO - KIT DE ENTRADA -->
             <section class="amazon-showcase">
                 <h3>Itens Essenciais para sua Primeira Montagem</h3>
                 <p>Para começar um pequeno sistema experimental, você precisará monitorar a água e circular o fluxo:</p>
                 
                 <div class="product-grid">
-                    <!-- Produto 1: Kit Alcon -->
                     <div class="product-card">
                         <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Alcon Kit Teste">
                         <h4>Alcon Kit Teste: Amônia, Nitrito e PH</h4>
                         <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
                     </div>
 
-                    <!-- Produto 2: Bomba PL-203 -->
                     <div class="product-card">
                         <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba Submersa PL-203">
                         <h4>Bomba Submersa PL-203 (1000 L/H)</h4>
@@ -98,15 +94,25 @@
                 <li><strong>Sustentabilidade:</strong> Uso mínimo de água e zero químicos.</li>
                 <li><strong>Produção em Casa:</strong> Pode ser feita em quintais, varandas ou garagens.</li>
                 <li><strong>Alimento Orgânico:</strong> Você sabe exatamente o que está comendo.</li>
-                <li><strong>Terapia:</strong> Cuidar dos peixes e das plantas é uma atividade relaxante e educativa.</li>
+                <li><strong>Terapia:</strong> Cuidar dos peixes e das plantas é uma atividade relaxante.</li>
             </ul>
 
-            <p>Agora que você entendeu o conceito, o próximo passo é aprender como estruturar o seu sistema. Se você quer saber quais tanques usar ou como montar sua filtragem, siga para o nosso guia prático.</p>
+            <p>Agora que você entendeu o conceito, o próximo passo é aprender como estruturar o seu sistema. Se você quer saber quais tanques usar ou como montar sua filtragem, baixe nosso material técnico completo.</p>
         </article>
 
+        <!-- ISCA DE FUNDO DE FUNIL: O PRÓXIMO PASSO LÓGICO -->
         <div class="nav-footer">
-            <p><strong>Pronto para tirar o projeto do papel?</strong></p>
-            <a href="passo-a-passo-aquaponia.html" class="btn-next">Ver Passo a Passo de Montagem →</a>
+            <div style="background: #eff7e9; border: 2px solid var(--primary); padding: 40px 20px; border-radius: 15px; margin-bottom: 40px;">
+                <h2 style="font-family: 'Source Serif Pro', serif; color: var(--dark); margin-top: 0;">Você já tem a teoria. Agora, precisa do mapa.</h2>
+                <p style="font-size: 18px; color: #444; max-width: 650px; margin: 0 auto 30px;">
+                    Para evitar erros caros com equipamentos errados ou perda de peixes por amônia, baixe o nosso <strong>Guia Mestre de 13 Capítulos</strong>. É o manual técnico que eu uso em minhas consultorias.
+                </p>
+                <a href="guia_gratuito.html" class="btn-next" style="box-shadow: 0 10px 20px rgba(105, 168, 79, 0.3);">QUERO BAIXAR O GUIA GRÁTIS →</a>
+                <p style="font-size: 14px; color: #777; margin-top: 15px;">PDF Gratuito • Envio Imediato • 30 Páginas de Conteúdo</p>
+            </div>
+
+            <p><strong>Ainda quer explorar mais o site?</strong></p>
+            <a href="passo-a-passo-aquaponia.html" style="color: var(--primary); font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--primary);">Ver Passo a Passo de Montagem →</a>
         </div>
     </div>
 
