@@ -48,6 +48,9 @@
         input { padding: 18px; border: 2px solid #eee; border-radius: 8px; font-size: 16px; outline: none; transition: 0.3s; }
         input:focus { border-color: var(--primary); background: #fff; }
         
+        /* Estilo para esconder o campo Honeypot */
+        .hp-field { display: none !important; visibility: hidden !important; }
+
         .btn-send { 
             background: var(--primary); 
             color: white; 
@@ -84,18 +87,20 @@
         </div>
 
         <form id="lead-form">
+            <!-- CAMPO HONEYPOT (Bloqueio de Bots) -->
+            <input type="text" name="sobrenome_confirmacao" class="hp-field" tabindex="-1" autocomplete="off">
+            
             <input type="text" name="nome" placeholder="Seu Nome Completo" required>
             <input type="email" name="email" placeholder="Seu melhor e-mail" required>
             <input type="hidden" name="interesse" value="ebook_gratuito">
             <button type="submit" class="btn-send" id="btn-submit">Receber Manual via E-mail</button>
         </form>
 
-        <div id="status-msg">Enviando seus dados para a planilha...</div>
+        <div id="status-msg">Processando dados e gerando acesso...</div>
         <div class="secure-note">🔒 Seus dados estão seguros. Não enviamos spam.</div>
     </div>
 
     <script>
-        // URL da sua planilha atualizada conforme sua mensagem
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzju-Kxuue9bWew4L9BjyWJ_D26aXVCHj7XCUfvu9ZlZkIFGg5ZJdhUrxrjy8obvpNL/exec';
         const form = document.getElementById('lead-form');
         const btn = document.getElementById('btn-submit');
@@ -115,12 +120,12 @@
                 body: formData 
             })
             .then(() => {
-                // Após salvar na planilha, enviamos para a página de agradecimento com o link do PDF
+                // Redirecionamento automático para a página de entrega
                 window.location.href = 'obrigado.html';
             })
             .catch(error => {
                 console.error('Erro!', error.message);
-                // Mesmo com erro, redirecionamos para não perder o usuário
+                // Segue para a página de obrigado mesmo em erro para não frustrar o usuário
                 window.location.href = 'obrigado.html';
             });
         });
