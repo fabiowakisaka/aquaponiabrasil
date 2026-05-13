@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipamentos Recomendados - Aquaponia Brasil</title>
-    <meta name="description" content="Confira o guia de equipamentos validados para aquaponia em 2026. Bombas, mídias biológicas e automação para seu sistema de alta performance.">
-    <meta name="keywords" content="equipamentos aquaponia, bomba ocean tech, nano rings, kit alcon master, automação aquaponia, horta em casa, tilápia">
+    <meta name="description" content="Confira o guia de equipamentos validados para aquaponia em 2026. Bombas, mídias biológicas, lemna e automação para seu sistema de alta performance.">
+    <meta name="keywords" content="equipamentos aquaponia, bomba ocean tech, nano rings, lemna minor, lentilha d'água, kit alcon master, automação aquaponia">
     
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     
     <style>
-        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --light-bg: #f8f9fa; }
+        :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --light-bg: #f8f9fa; --ml-yellow: #FFE600; --ml-blue: #2D3277; }
         body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--dark); line-height: 1.6; background-color: var(--white); }
         
         .container { padding: 40px 5%; max-width: 1100px; margin: 0 auto; }
@@ -20,7 +20,7 @@
         .page-header h1 { font-family: 'Source Serif Pro', serif; color: var(--primary); font-size: clamp(28px, 5vw, 42px); margin-bottom: 15px; }
         .page-header p { font-size: 18px; max-width: 800px; margin: 0 auto; opacity: 0.9; }
 
-        /* Banner Dinâmico (Identificação de Origem) */
+        /* Banner Dinâmico */
         #dynamic-banner { display: none; padding: 15px; text-align: center; font-weight: bold; font-size: 14px; border-bottom: 1px solid #c8e6c9; }
         .banner-success { background: #e9f5e1; color: #2e7d32; }
         .banner-info { background: #e3f2fd; color: #1976d2; border-bottom-color: #bbdefb !important; }
@@ -46,21 +46,26 @@
         
         .tech-specs { background: #ffffff; padding: 15px; border-radius: 5px; margin: 15px 0; font-size: 14px; border: 1px solid #ddd; }
         
+        /* Botões de Ação */
         .cta-button { 
-            background: var(--accent); 
-            color: var(--dark) !important; 
             padding: 15px 35px; 
             text-decoration: none; 
             border-radius: 5px; 
             font-weight: bold; 
             display: inline-block;
             transition: 0.3s;
-            box-shadow: 0 4px 0px #cc7a00;
             text-transform: uppercase;
+            border: none;
+            cursor: pointer;
         }
-        .cta-button:hover { background: #e68a00; transform: translateY(-2px); box-shadow: 0 6px 0px #cc7a00; }
+        .btn-amazon { background: var(--accent); color: var(--dark) !important; box-shadow: 0 4px 0px #cc7a00; }
+        .btn-amazon:hover { background: #e68a00; transform: translateY(-2px); box-shadow: 0 6px 0px #cc7a00; }
+        
+        .btn-ml { background: var(--ml-yellow); color: var(--ml-blue) !important; box-shadow: 0 4px 0px #D1BC00; }
+        .btn-ml:hover { background: #f2db00; transform: translateY(-2px); box-shadow: 0 6px 0px #D1BC00; }
 
         .combo-tag { background: var(--primary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 10px; display: inline-block; }
+        .tag-essential { background: #d32f2f; }
 
         @media (max-width: 850px) {
             .equipment-section { flex-direction: column; text-align: center; padding: 20px; }
@@ -71,56 +76,70 @@
 <body>
 
     <div id="menu-placeholder"></div>
-
-    <!-- O BANNER SERÁ PREENCHIDO PELO SCRIPT -->
     <div id="dynamic-banner"></div>
 
     <header class="page-header">
         <h1>O Kit de Sobrevivência do seu Sistema</h1>
-        <p>Abaixo estão os componentes exatos que eu validei para garantir durabilidade e eficiência em 2026.</p>
+        <p>Estes são os componentes exatos que eu validei. Recomendo que a <strong>Lemna</strong> e a <strong>Bomba</strong> sejam suas primeiras aquisições para garantir o ciclo biológico.</p>
     </header>
 
     <div class="container">
 
-        <!-- Item 01: Bomba Eletrônica -->
+        <!-- Item 01: Lemna (Mercado Livre) -->
+        <section class="equipment-section" style="border-left-color: var(--ml-yellow);">
+            <div class="equipment-image">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_787112-MLB76206014907_052024-F.webp" alt="Lemna Minor">
+            </div>
+            <div class="equipment-info">
+                <span class="combo-tag tag-essential">START BIOLÓGICO</span>
+                <h2>01. Mudas de Lemna Minor (Lentilha d'água)</h2>
+                <p>Este é o investimento mais inteligente que você fará. A Lemna dobra de massa a cada 48h, criando uma fonte infinita de proteína para seus peixes e um filtro natural para sua água. Comprar as mudas agora garante que sua biologia esteja madura quando os peixes chegarem.</p>
+                <div class="tech-specs">
+                    <strong>Por que comprar primeiro?</strong> É uma produção única. Você compra uma vez e, seguindo o guia, nunca mais precisará gastar com mudas ou ração integral.
+                </div>
+                <a href="https://meli.la/28NEPXW" target="_blank" class="cta-button btn-ml">Ver Oferta no Mercado Livre →</a>
+            </div>
+        </section>
+
+        <!-- Item 02: Bomba Eletrônica (Amazon) -->
         <section class="equipment-section">
             <div class="equipment-image">
                 <img src="https://m.media-amazon.com/images/I/61uRVgftIqL._AC_SL1280_.jpg" alt="Bomba Ocean Tech">
             </div>
             <div class="equipment-info">
                 <span class="combo-tag">O CORAÇÃO DO SISTEMA</span>
-                <h2>01. Bomba Ocean Tech AC Pump</h2>
-                <p>Motor eletrônico de baixo consumo para operação 24/7 sem sustos na conta de luz.</p>
+                <h2>02. Bomba Ocean Tech AC Pump</h2>
+                <p>A circulação é o que mantém seus peixes vivos. Esta bomba eletrônica é a que utilizo em meus projetos por ser bivolt e extremamente econômica para operação 24/7.</p>
                 <div class="tech-specs">
-                    <strong>Por que esta?</strong> Silenciosa, controle de vazão digital e eixo de cerâmica.
+                    <strong>Destaque:</strong> Possui eixo de cerâmica e controle digital de vazão, essencial para ajustar o fluxo das suas camas de cultivo.
                 </div>
-                <a href="https://amzn.to/4tu4YFZ" target="_blank" class="cta-button">Ver Preço na Amazon →</a>
+                <a href="https://amzn.to/4tu4YFZ" target="_blank" class="cta-button btn-amazon">Ver Preço na Amazon →</a>
             </div>
         </section>
 
-        <!-- Item 02: Monitoramento Master -->
+        <!-- Item 03: Monitoramento Master -->
         <section class="equipment-section">
             <div class="equipment-info">
-                <span class="combo-tag">SEGURO DE VIDA DOS PEIXES</span>
-                <h2>02. Kit de Testes Master Alcon</h2>
-                <p>Indispensável para monitorar pH, amônia e nitrito, especialmente nos primeiros 30 dias.</p>
-                <a href="https://amzn.to/3PBZ5bQ" target="_blank" class="cta-button">Garantir meu Kit de Testes →</a>
+                <span class="combo-tag">SEGURANÇA TÉCNICA</span>
+                <h2>03. Kit de Testes Master Alcon</h2>
+                <p>O que você não mede, você não gerencia. Este kit é seu laboratório de bolso para monitorar o pH e os níveis de amônia, evitando a perda de todo o seu estoque de peixes.</p>
+                <a href="https://amzn.to/3PBZ5bQ" target="_blank" class="cta-button btn-amazon">Garantir meu Kit de Testes →</a>
             </div>
             <div class="equipment-image">
                 <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon Master">
             </div>
         </section>
 
-        <!-- Item 03: Mídias de Alta Performance -->
+        <!-- Item 04: Mídias de Alta Performance -->
         <section class="equipment-section">
             <div class="equipment-image">
                 <img src="https://m.media-amazon.com/images/I/614zeGaEaIL._AC_SL1199_.jpg" alt="Nano Rings">
             </div>
             <div class="equipment-info">
                 <span class="combo-tag">O PULMÃO BIOLÓGICO</span>
-                <h2>03. Mídias Cerâmicas Nano Rings</h2>
-                <p>Alta porosidade microscópica para colonização de bactérias nitrificantes.</p>
-                <a href="https://amzn.to/431iqX2" target="_blank" class="cta-button">Comprar Mídias Cerâmicas →</a>
+                <h2>04. Mídias Cerâmicas Nano Rings</h2>
+                <p>Substitua a brita comum por tecnologia. Estas mídias oferecem a maior área de superfície do mercado para a fixação das bactérias que transformam dejetos em nutrientes.</p>
+                <a href="https://amzn.to/431iqX2" target="_blank" class="cta-button btn-amazon">Comprar Mídias Cerâmicas →</a>
             </div>
         </section>
 
@@ -138,6 +157,11 @@
             banner.innerHTML = "✓ Guia Mestre enviado! Explore abaixo os componentes para montar seu sistema.";
             banner.className = "banner-success";
             banner.style.display = "block";
+            
+            // Abertura automática da Lemna em nova aba para quem vem do funil
+            setTimeout(function() {
+                window.open('https://meli.la/28NEPXW', '_blank');
+            }, 2000);
         } else {
             banner.innerHTML = "Explore a lista de equipamentos validados para alta performance.";
             banner.className = "banner-info";
