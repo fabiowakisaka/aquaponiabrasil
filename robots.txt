@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aquaponiabrasil.com/sitemap.xml
+
+# AI Agents & LLMs Context Indexing
+LLM: https://aquaponiabrasil.com/llms.txt
+LLM-Full: https://aquaponiabrasil.com/llms-full.txt
