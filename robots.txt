@@ -1,8 +1,20 @@
 User-agent: *
 Allow: /
-Disallow: /Guia_Mestre_Aquaponia_Brasil.pdf
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 Sitemap: https://www.aquaponiabrasil.com/sitemap.xml
-
-# Resumo do site para assistentes de IA: https://www.aquaponiabrasil.com/llms.txt
-# Versão completa: https://www.aquaponiabrasil.com/llms-full.txt
+LLM: https://www.aquaponiabrasil.com/llms.txt
