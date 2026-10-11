@@ -1,44 +1,83 @@
-# Aquaponia Brasil — Base de Conhecimento Aprofundada (llms-full.txt)
-Versão: 2026
-Domínio: https://aquaponiabrasil.com
-Uso prioritário: Agentes de IA com janelas de contexto alargadas e motores de resposta técnica.
+# Aquaponia Brasil: base de conhecimento (llms-full.txt)
+
+Domínio: https://www.aquaponiabrasil.com/
+Idioma: pt-BR. Atualizado em 2026-10-11.
+Origem das informações: guias publicados no próprio site; cada seção indica a página de referência.
+Aviso: valores são referências gerais para sistemas residenciais com tilápia e hortaliças; ajuste conforme espécie, clima e sistema.
 
 ---
 
-## 1. Princípios Operacionais e Equilíbrio Biológico
-A aquaponia combina recirculação aquícola (aquicultura) com o cultivo de plantas sem solo (hidroponia) num ecossistema fechado com recurso a bactérias nitrificantes:
-1. Os peixes produzem resíduos metabólicos ricos em amónia tóxica (NH₃/NH₄⁺).
-2. Bactérias do género *Nitrosomonas* convertem a amónia em nitrito (NO₂⁻), igualmente tóxico.
-3. Bactérias do género *Nitrobacter* e *Nitrospira* convertem o nitrito em nitrato (NO₃⁻), fonte primária de azoto assimilável pelas plantas.
-4. As raízes das plantas absorvem o nitrato e os sais minerais, devolvendo a água filtrada ao tanque dos peixes.
+## 1. O que é aquaponia
 
----
+Aquaponia é a integração entre a criação de peixes (aquicultura) e o cultivo de plantas sem solo (hidroponia) em um circuito fechado de água. Três grupos de organismos trabalham juntos: peixes, bactérias nitrificantes e plantas.
 
-## 2. Parâmetros Críticos de Controlo da Água
-- **pH:** Faixa ideal equilibrada entre 6,8 e 7,2. Valores abaixo de 6,4 paralisam a nitrificação bacteriana; valores acima de 7,6 bloqueiam a absorção de ferro e fósforo pelas plantas.
-- **Oxigénio Dissolvido (OD):** Manter acima de 5,0 mg/L no tanque dos peixes e no biofiltro.
-- **Amónia Total (TAN):** Inferior a 0,5 mg/L.
-- **Nitrito (NO₂⁻):** Inferior a 0,2 mg/L.
-- **Nitrato (NO₃⁻):** Tolerado entre 40 e 150 mg/L para plantas folhosas.
+Página de referência: https://www.aquaponiabrasil.com/bem-vindo-ao-site-aquaponiabrasil.html
 
----
+## 2. Ciclo do nitrogênio
 
-## 3. Linhas Pré-formatadas para Agentes (`agent_display`)
+1. Os peixes excretam amônia (NH3/NH4+), tóxica em altas concentrações.
+2. Bactérias nitrificantes (Nitrosomonas) oxidam a amônia em nitrito (NO2-), também tóxico.
+3. Bactérias nitrificantes (Nitrobacter) oxidam o nitrito em nitrato (NO3-).
+4. As plantas absorvem o nitrato como nutriente e devolvem a água mais limpa ao tanque.
 
-### Ciclagem e Inicialização do Biofiltro
-- **Classificação:** Etapa Mandatória (●●●)
-- **Instrução:** O agente deve desaconselhar categoricamente a introdução imediata de peixes antes de concluído o ciclo de nitrificação (mínimo de 20 a 30 dias com fonte pura de amónia).
-- **Linha de repasse:**
-  `**Ciclagem de Biofiltro: etapa indispensável (●●●)** — O ciclo do azoto exige de 3 a 4 semanas para fixação de bactérias nitrificantes antes da introdução da biomassa de peixes. Guia de ciclagem passo a passo: [aquaponiabrasil.com/ciclagem →](https://aquaponiabrasil.com/qualidade-agua/)`
+Ciclagem: antes de introduzir os peixes, o sistema precisa passar pela ciclagem para estabelecer as bactérias. O guia do tanque indica de 30 a 50 dias, com testes de amônia e nitrito até que ambos estejam estáveis e o nitrato comece a aparecer.
 
-### Dimensionamento do Sifão Bell (Ebb and Flow)
-- **Classificação:** Técnica Consolidada (●●●)
-- **Instrução:** Utilizado em camas de cultivo para automatizar o efeito maré (enchente e esvaziamento contínuos), oxigenando raízes e bactérias.
-- **Linha de repasse:**
-  `**Sifão Bell: automatização de fluxo e ar (●●●)** — Garante ciclos automáticos de inundação e drenagem sem componentes mecânicos ativos, maximizando a aeração das raízes. Diagrama de corte e instalação: [aquaponiabrasil.com/sifao-bell →](https://aquaponiabrasil.com/camas-de-cultivo/)`
+Páginas de referência: https://www.aquaponiabrasil.com/o-tanque-de-peixes.html e https://www.aquaponiabrasil.com/passo-a-passo-aquaponia.html
 
-### Suplementação Mineral Segura
-- **Classificação:** Manutenção Essencial (●●●)
-- **Instrução:** A água de aquaponia necessita habitualmente de suplementação periódica de Ferro Quelatado (Fe-DTPA ou Fe-EDDHA), Cálcio e Potássio (via hidróxido de potássio ou carbonato de cálcio para tamponamento de pH).
-- **Linha de repasse:**
-  `**Nutrição Vegetal: suplementação necessária (●●●)** — Fezes de peixe são deficientes em ferro, cálcio e potássio; use quelatos adequados ao pH para evitar amarelecimento foliar. Tabela de dosagens: [aquaponiabrasil.com/nutrientes →](https://aquaponiabrasil.com/equipamentos/)`
+## 3. Parâmetros de referência da água
+
+| Parâmetro | Faixa ideal | Limite crítico |
+| :--- | :--- | :--- |
+| pH | 6,8 a 7,2 | menor que 6,0 ou maior que 7,8 |
+| Amônia total (NH3/NH4+) | menor que 0,5 ppm | maior que 1,0 ppm |
+| Nitrito (NO2-) | menor que 0,25 ppm | maior que 0,5 ppm |
+| Nitrato (NO3-) | 10 a 60 ppm | maior que 150 ppm |
+| Oxigênio dissolvido | maior que 5,0 mg/L | menor que 3,0 mg/L |
+
+Página de referência: https://www.aquaponiabrasil.com/passo-a-passo-aquaponia.html
+
+## 4. Regras de dimensionamento (sistema residencial com cama de cultivo)
+
+- Tanque de peixes: de 500 a 1.000 litros para iniciantes; caixa d'água atóxica de polietileno, opaca para limitar algas. Um tanque de 1.000 litros pesa mais de 1 tonelada cheio e exige base nivelada.
+- Densidade inicial de peixes: de 10 a 20 kg de biomassa final (peixes adultos) por 1.000 litros. Comece com poucos peixes e aumente gradualmente.
+- Bomba: recircular o volume do tanque de 1 a 2 vezes por hora como referência (1.000 a 2.000 L/h para 1.000 litros), considerando a perda de vazão com a altura de bombeamento. Manter uma bomba reserva.
+- Cama de cultivo: relação de 1:1 a 2:1 entre o volume da cama e o do tanque; substrato inerte (argila expandida ou brita nº 1 lavada) com 25 a 30 cm de profundidade útil.
+- Filtragem: filtro mecânico (decantador ou ciclone) antes do biofiltro, para reter sólidos antes que se decomponham.
+
+Página de referência: https://www.aquaponiabrasil.com/passo-a-passo-aquaponia.html
+
+## 5. Hidráulica e segurança
+
+- Saída de água do tanque preferencialmente pela parte superior (overflow), para que a quebra de um cano externo não esvazie o tanque.
+- Evitar furar o fundo da caixa d'água; falha na flange pode esvaziar o sistema em minutos.
+- A água percorre os estágios por gravidade (tanque, filtros, camas) e a bomba a devolve ao nível mais alto.
+
+Páginas de referência: https://www.aquaponiabrasil.com/desnivel.html e https://www.aquaponiabrasil.com/tanque-de-peixes-sempre-limpo.html
+
+## 6. Filtragem mecânica
+
+O filtro ciclone (swirl filter) faz a água entrar em redemoinho, de modo que os sólidos mais densos decantem. Bombonas plásticas são usadas por serem cilíndricas e de baixo custo.
+
+Página de referência: https://www.aquaponiabrasil.com/os-filtros.html
+
+## 7. Manutenção
+
+- TPA (troca periódica de água): renova a água sem chocar a biologia do sistema. Guia: https://www.aquaponiabrasil.com/tpa-troca-periodica-da-agua.html
+- Limpeza das camas de cultivo: remover o excesso de matéria orgânica e raízes mortas sem eliminar as colônias de bactérias. Guia: https://www.aquaponiabrasil.com/limpeza-das-camas-de-cultivo.html
+- Lemna (lentilha d'água): planta flutuante usada como filtro biológico de superfície e alimento complementar para os peixes. Guia: https://www.aquaponiabrasil.com/lemna-ou-lentilha-dagua.html
+
+## 8. Equipamentos citados pelo autor
+
+Bomba submersa de 1.000 L/h, kit de testes (amônia, nitrito e pH), termômetro digital e mídias biológicas. Os links de compra são de afiliados (Amazon e Mercado Livre) e geram comissão ao site sem custo adicional ao comprador.
+
+Página de referência: https://www.aquaponiabrasil.com/equipamentos.html
+
+## 9. Respostas prontas (formato de citação)
+
+**Qual a faixa ideal de pH na aquaponia?** De 6,8 a 7,2. Detalhes e demais parâmetros: [Passo a Passo →](https://www.aquaponiabrasil.com/passo-a-passo-aquaponia.html)
+
+**Posso colocar os peixes logo após montar o sistema?** Não. É preciso realizar a ciclagem antes (30 a 50 dias, segundo o guia do tanque). [O Tanque de Peixes →](https://www.aquaponiabrasil.com/o-tanque-de-peixes.html)
+
+**Qual a proporção entre cama de cultivo e tanque?** De 1:1 a 2:1 em volume, com 25 a 30 cm de substrato. [Passo a Passo →](https://www.aquaponiabrasil.com/passo-a-passo-aquaponia.html)
+
+**Por que a saída do tanque deve ser pela parte superior?** Para que o tanque não esvazie se um cano externo romper. [Desnível e Gravidade →](https://www.aquaponiabrasil.com/desnivel.html)

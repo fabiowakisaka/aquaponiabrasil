@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /Guia_Mestre_Aquaponia_Brasil.pdf
 
-Sitemap: https://aquaponiabrasil.com/sitemap.xml
+Sitemap: https://www.aquaponiabrasil.com/sitemap.xml
 
-# AI Agents & LLMs Context Indexing
-LLM: https://aquaponiabrasil.com/llms.txt
-LLM-Full: https://aquaponiabrasil.com/llms-full.txt
+# Resumo do site para assistentes de IA: https://www.aquaponiabrasil.com/llms.txt
+# Versão completa: https://www.aquaponiabrasil.com/llms-full.txt
