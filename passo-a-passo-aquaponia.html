@@ -13,8 +13,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passo a Passo: Como Iniciar seu Sistema de Aquaponia - Aquaponia Brasil</title>
+    <meta name="description" content="Guia técnico passo a passo para montar seu sistema de aquaponia: dimensionamento de tanque, bombas, filtros mecânicos e biológicos, camas de cultivo e parâmetros de água.">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
     
+    <!-- Schema.org HowTo para agentes de IA e crawlers semânticos -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Como Montar um Sistema de Aquaponia Caseiro",
+      "description": "Passo a passo técnico completo para montar e equilibrar um ecossistema aquapônico integrado de peixes e hortaliças.",
+      "totalTime": "P30D",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "BRL"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "O Reservatório (Tanque de Peixes)",
+          "text": "Instalação de caixa d'água atóxica de polietileno (500L a 1000L) em base nivelada com suporte de carga estrutural."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Circulação e Bomba Submersa",
+          "text": "Dimensionamento da vazão da bomba para recircular o volume total do tanque de 2 a 3 vezes por hora."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Filtragem Mecânica e Biológica",
+          "text": "Separação de resíduos sólidos pesados e conversão de amônia em nitrato por bactérias nitrificantes em mídias de alta superfície."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "A Cama de Cultivo",
+          "text": "Preenchimento de recipientes de plantio com argila expandida ou brita para absorção de nitrato pelas raízes."
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root { --primary: #69A84F; --accent: #FF9900; --dark: #222; --white: #ffffff; --text: #333; --light-bg: #f4f4f4; }
         body { font-family: 'Raleway', sans-serif; margin: 0; color: var(--text); line-height: 1.8; background-color: var(--white); }
@@ -40,6 +78,14 @@
         .article-img { width: 100%; max-width: 600px; display: block; margin: 30px auto 10px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .img-caption { text-align: center; font-size: 14px; color: #777; font-style: italic; margin-bottom: 30px; display: block; }
 
+        /* Tabela de Parâmetros */
+        .tech-table-container { overflow-x: auto; margin: 35px 0; }
+        .tech-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 16px; background: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; }
+        .tech-table th { background: var(--primary); color: white; padding: 12px 16px; font-weight: 700; }
+        .tech-table td { padding: 12px 16px; border-bottom: 1px solid #eee; }
+        .tech-table tr:nth-child(even) { background-color: #fafafa; }
+        .tech-table tr:last-child td { border-bottom: none; }
+
         /* Vitrine Amazon */
         .amazon-showcase { background: var(--light-bg); border-radius: 15px; padding: 30px; margin: 50px 0; border: 1px solid #ddd; text-align: center; }
         .amazon-showcase h3 { font-family: 'Source Serif Pro', serif; margin-top: 0; color: var(--dark); margin-bottom: 25px; }
@@ -53,7 +99,11 @@
         .nav-footer { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 2px solid #eee; }
         .btn-next { background: var(--primary); color: white !important; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 20px; display: inline-block; }
 
-        @media (max-width: 600px) { .content { font-size: 16px; } .step-guide { padding-left: 20px; } }
+        @media (max-width: 600px) { 
+            .content { font-size: 16px; } 
+            .step-guide { padding-left: 20px; }
+            .tech-table th, .tech-table td { padding: 10px 8px; font-size: 14px; }
+        }
     </style>
 </head>
 <body>
@@ -66,26 +116,29 @@
 
     <div class="container">
         <article class="content">
-            <p>Seja bem-vindo ao guia definitivo da **Aquaponia Brasil**. Montar seu próprio sistema é mais simples do que parece, mas exige atenção aos detalhes técnicos que garantem a vida dos peixes e das plantas.</p>
+            <p>Seja bem-vindo ao guia definitivo da <strong>Aquaponia Brasil</strong>. Montar seu próprio sistema de recirculação aquapônica (RAS integrado) é um processo altamente técnico e eficiente: os resíduos metabólicos dos peixes são convertidos biologicamente em nutrientes assimiláveis pelas plantas, enquanto as raízes e as mídias purificam a água que retorna ao tanque.</p>
 
-            <img src="Home_arquivos/passoapasso01.png" alt="Visão geral" class="article-img">
+            <img src="Home_arquivos/passoapasso01.png" alt="Visão geral de um sistema de aquaponia com tanque e camas de cultivo integrados" class="article-img">
             <span class="img-caption">Um ecossistema equilibrado: peixes e plantas em harmonia.</span>
 
             <div class="step-guide">
                 <!-- Passo 1 -->
                 <div class="step-point">
-                    <h2>01. O Reservatório (Tanque)</h2>
-                    <p>Comece com uma caixa d'água atóxica (Polietileno). Para iniciantes, o ideal é entre 500L e 1000L. Posicione-a em um local plano e que suporte o peso final.</p>
-                    <img src="Home_arquivos/passoapasso02.jpg" alt="Montagem básica" class="article-img">
+                    <h2>01. O Reservatório (Tanque de Peixes)</h2>
+                    <p>O ponto de partida é a escolha de uma caixa d'água atóxica fabricada em polietileno virgem (PEAD) ou fibra de vidro. Para sistemas residenciais e iniciantes, volumes entre <strong>500 e 1.000 litros</strong> oferecem maior estabilidade térmica e tamponamento contra oscilações químicas bruscas.</p>
+                    <p><strong>Cálculo de carga estrutural:</strong> Um reservatório de 1.000 litros pesa mais de 1 tonelada quando cheio. Posicione-o sempre sobre uma superfície totalmente plana, nivelada e com sustentação de solo ou laje calculada para essa carga.</p>
+                    <p><strong>Densidade de estocagem inicial:</strong> Para tilápias em sistemas iniciantes, mantenha a taxa conservadora de <strong>10 kg a 20 kg de peixe para cada 1.000 litros de água</strong> (aproximadamente 20 a 30 alevinos em desenvolvimento), evitando picos precoces de amônia.</p>
+                    <img src="Home_arquivos/passoapasso02.jpg" alt="Montagem básica do tanque de peixes com conexões hidráulicas" class="article-img">
                 </div>
 
                 <!-- Passo 2 -->
                 <div class="step-point">
-                    <h2>02. Circulação e Bomba</h2>
-                    <p>A bomba deve ser capaz de girar o volume total do tanque pelo menos 2 a 3 vezes por hora. Sem circulação, não há oxigênio e os peixes morrem.</p>
+                    <h2>02. Circulação Hidráulica e Bomba Submersa</h2>
+                    <p>A taxa de renovação da água é vital para garantir o carreamento de oxigênio dissolvido e a remoção contínua de amônia do tanque. A regra mandatória de dimensionamento é que a bomba submersa deve recircular o volume total do tanque <strong>de 2 a 3 vezes por hora</strong>.</p>
+                    <p><em>Exemplo de cálculo:</em> Para um reservatório de 1.000 litros, a bomba precisa entregar uma vazão real de pelo menos <strong>2.000 a 3.000 L/h</strong> na altura manométrica do seu sistema (descontando perdas por desnível e atrito nos canos).</p>
                     
                     <div class="highlight-card" style="border-left: 5px solid #d9534f;">
-                        <p><strong>Dica do Fábio:</strong> Nunca economize na bomba. É o coração do sistema. Tenha sempre uma reserva para emergências!</p>
+                        <p><strong>Dica do Fábio:</strong> Nunca economize na bomba. Ela é o coração ininterrupto do sistema. Em sistemas aquapônicos de recirculação, a parada da bomba por poucas horas consome todo o oxigênio residual e causa perda dos peixes. Tenha sempre uma bomba reserva pronta para troca!</p>
                     </div>
                 </div>
 
@@ -94,34 +147,87 @@
                     <h3>Equipamentos para Começar</h3>
                     <div class="product-grid">
                         <div class="product-card">
-                            <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba 1000 L/h">
+                            <img src="https://m.media-amazon.com/images/I/61uxG7ENRKL._AC_SL1200_.jpg" alt="Bomba Submersa 1000 L/h para recirculação de água">
                             <h4>Bomba Submersa 1000 L/H (Sistemas Pequenos)</h4>
-                            <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                            <a href="https://amzn.to/4tpQFlX" class="btn-amazon" target="_blank" rel="noopener">Ver na Amazon</a>
                         </div>
                         <div class="product-card">
-                            <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit Alcon">
+                            <img src="https://m.media-amazon.com/images/I/61SeqPBMpNL._AC_SL1000_.jpg" alt="Kit de Testes Alcon para Amônia, Nitrito e pH">
                             <h4>Kit Completo de Testes (Amônia, Nitrito, PH)</h4>
-                            <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank">Ver na Amazon</a>
+                            <a href="https://amzn.to/3PBZ5bQ" class="btn-amazon" target="_blank" rel="noopener">Ver na Amazon</a>
                         </div>
                     </div>
                 </section>
 
                 <!-- Passo 3 -->
                 <div class="step-point">
-                    <h2>03. Filtragem e Biologia</h2>
-                    <p>A água do tanque deve passar por um <a href="os-filtros.html">filtro mecânico</a> (para tirar a sujeira pesada) e depois pelas mídias biológicas, onde as bactérias transformam amônia em adubo para as plantas.</p>
-                    <img src="Home_arquivos/passoapasso04.jpg" alt="Ciclo do Nitrogênio" class="article-img">
+                    <h2>03. Filtragem Mecânica e Biofiltro</h2>
+                    <p>O tratamento de água na aquaponia opera em duas etapas inseparáveis que antecedem as plantas:</p>
+                    <p>1. <strong>Filtro Mecânico (Decantador/Vórtice ou Manta Perlon):</strong> Retém as fezes sólidas e restos de ração antes que se decomponham na coluna d'água. Consulte nosso guia sobre <a href="os-filtros.html">os filtros mecânicos</a> para entender a construção de decantadores de fluxo radial.</p>
+                    <p>2. <strong>Biofiltro (Ciclo do Nitrogênio):</strong> Mídias biológicas de alta área superficial (como conduítes corrugados, tampinhas plásticas, bio balls ou anéis de cerâmica/vidro sinterizado) abrigam colônias de bactérias nitrificantes. As bactérias <em>Nitrosomonas</em> oxidam a amônia tóxica ($NH_3$) em nitrito ($NO_2^-$), e as bactérias <em>Nitrobacter</em> oxidam o nitrito no nitrato ($NO_3^-$), que é a fonte de adubo seguro e assimilável para a horta.</p>
+                    <img src="Home_arquivos/passoapasso04.jpg" alt="Esquema das etapas do Ciclo do Nitrogênio na Aquaponia" class="article-img">
                 </div>
 
                 <!-- Passo 4 -->
                 <div class="step-point">
-                    <h2>04. A Cama de Cultivo</h2>
-                    <p>Utilize argila expandida ou brita para fixar as plantas. É aqui que a mágica acontece: as raízes filtram a água e crescem com os nutrientes dos peixes.</p>
-                    <img src="Home_arquivos/duckweedgrowbed.jpg" alt="Cama de cultivo" class="article-img">
+                    <h2>04. A Cama de Cultivo e Substratos</h2>
+                    <p>A cama de cultivo é onde a mágica da biofiltração vegetal se completa. A regra básica de proporção volumétrica é manter uma relação de <strong>1:1 a 2:1 entre o volume da cama de cultivo e o volume do tanque de peixes</strong>.</p>
+                    <p>Utilize substratos inertes como <strong>argila expandida</strong> ou <strong>brita nº 1 lavada</strong> em recipientes com profundidade útil de 25 a 30 cm. O cultivo pode operar por inundação contínua ou preferencialmente pelo ciclo de maré comandado por um <em>sifão bell</em>, oxigenando simultaneamente a rizosfera das raízes e o biofilme aderido ao substrato.</p>
+                    <img src="Home_arquivos/duckweedgrowbed.jpg" alt="Cama de cultivo aquapônica com argila expandida e plantas" class="article-img">
                 </div>
             </div>
 
-            <p>O aprendizado é constante. Cada erro é um ajuste para um sistema mais resiliente. Se você já tem os equipamentos básicos, comece a <a href="o-tanque-de-peixes.html">ciclagem da água</a> imediatamente!</p>
+            <!-- Tabela Técnica de Parâmetros da Água -->
+            <div class="highlight-card">
+                <h3 style="margin-top:0; color: var(--dark); font-family: 'Source Serif Pro', serif;">Parâmetros Químicos de Referência</h3>
+                <p>Para manter peixes e vegetais saudáveis sem estresse fisiológico, monitore semanalmente a água e mantenha as leituras dentro destas faixas de equilíbrio:</p>
+                <div class="tech-table-container">
+                    <table class="tech-table">
+                        <thead>
+                            <tr>
+                                <th>Parâmetro</th>
+                                <th>Faixa Ideal</th>
+                                <th>Limite Crítico</th>
+                                <th>Ação Corretiva</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>pH</strong></td>
+                                <td>6.8 a 7.2</td>
+                                <td>Menor que 6.0 / Maior que 7.8</td>
+                                <td>Hidróxido de cálcio / Bicarbonato de potássio</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Amônia Total ($NH_3/NH_4^+$)</strong></td>
+                                <td>Menor que 0.5 ppm</td>
+                                <td>Maior que 1.0 ppm</td>
+                                <td>Suspender ração e verificar biofiltro</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nitrito ($NO_2^-$)</strong></td>
+                                <td>Menor que 0.25 ppm</td>
+                                <td>Maior que 0.5 ppm</td>
+                                <td>Aumentar oxigenação e aeração biológica</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nitrato ($NO_3^-$)</strong></td>
+                                <td>10 a 60 ppm</td>
+                                <td>Maior que 150 ppm</td>
+                                <td>Aumentar densidade de plantas na cama</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Oxigênio Dissolvido</strong></td>
+                                <td>Maior que 5.0 mg/L</td>
+                                <td>Menor que 3.0 mg/L</td>
+                                <td>Adicionar aeração e venturis de emergência</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p>O aprendizado é constante. Cada erro é um ajuste para um sistema mais resiliente. Se você já tem os equipamentos básicos posicionados, comece a <a href="o-tanque-de-peixes.html">ciclagem da água</a> imediatamente antes de introduzir qualquer peixe no reservatório!</p>
 
         </article>
 
